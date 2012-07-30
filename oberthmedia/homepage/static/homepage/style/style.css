@@ -48,6 +48,9 @@ body, html {
     background-repeat: no-repeat, repeat;
     background-position: bottom;
     background-size: 100%, auto;
+    border-top: 2px solid #263747;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 #site.night {
@@ -278,14 +281,13 @@ nav {
 
             #content .references .reference .reference_details {
                 display: none;
-                margin-top: 100px;
                 box-sizing: border-box;
                 -moz-box-sizing: border-box;
                 padding: 20px;
                 width: 100%;
                 position: absolute;
                 z-index: 3;
-                bottom: 0;
+                top: 120px;
             }
 
             #content .references .reference:hover .reference_details {

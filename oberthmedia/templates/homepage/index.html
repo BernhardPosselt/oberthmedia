@@ -5,7 +5,7 @@
 {% block title %}{% trans 'Oberth-Media - Werbeagentur aus Rostock'%}{% endblock %}
     
 {% block content %}
-<div class="title" style="margin-left: -18px"><h1>{% trans 'Unsere Referenzen' %}</h1></div>
+<div class="title" style="margin-left: -18px; margin-top: -9px"><h1>{% trans 'Unsere Referenzen' %}</h1></div>
 <div class="references">
     {% for ref in references %}
         <div class="reference" {% if forloop.counter|divisibleby:'3' %}style="margin-right: 0;"{% endif %}>
