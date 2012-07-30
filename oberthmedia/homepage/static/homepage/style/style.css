@@ -258,13 +258,43 @@ nav {
             width: 334px;
             height: 360px;
             margin-right: 11px;
-            float: left;
             margin-bottom: 11px;
-            opacity: 0.5;
+            float: left;
             position: relative;
             z-index: 1;
         }
 
+                #content .references .reference .reference_details {
+                    display: none;
+                    background-color: rgba(0, 0, 0, 1);
+                    margin-top: 100px;
+                    box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    padding: 20px;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    border-top: 1px solid #333;
+                }
+
+                #content .references .reference:hover .reference_details {
+                    display: block;
+                }
+
+                #content .references .reference h2.reference_title {
+                    word-wrap: break-word;
+                    color: #fefefe;
+                    font-size: 40pt;
+                    font-weight: normal;   
+                    margin: 0;
+                    padding: 0;
+                    line-height: 1;
+                }
+
+                #content .references .reference .reference_description {
+                    word-wrap: break-word;   
+                    color: #263747;
+                }
 /**
  * Footer
  */
