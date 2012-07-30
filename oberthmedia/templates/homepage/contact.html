@@ -13,9 +13,9 @@
         <div class="form" id="contact_form">
             {% for field in contact_form %}
             <div title='{% for msg in field.errors %}{{ msg }}{% endfor %}' 
-                 class="line {% if field.errors %}error{% endif %}">
+                 class="line">
                 <div class="name">{{ field.help_text }}</div>
-                <div class="field">{{ field }}</div></div>
+                <div class="field {% if field.errors %}error{% endif %}">{{ field }}</div></div>
             {% endfor %}
             <div class="line"><input type="submit" value="{% blocktrans %}Nachricht absenden{% endblocktrans %}" /></div>
         </div>
