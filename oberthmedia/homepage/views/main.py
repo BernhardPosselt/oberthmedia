@@ -36,7 +36,7 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect(reverse('homepage:contact'))
+            return HttpResponseRedirect(reverse('homepage:contact_success'))
     else:
         form = ContactForm()
     ctx = {
@@ -44,6 +44,13 @@ def contact(request):
         "active_tab": "contact"
     }
     return render(request, 'homepage/contact.html', ctx)
+
+
+def contact_success(request):
+    ctx = {
+        "active_tab": "contact"
+    }
+    return render(request, 'homepage/contact_success.html', ctx)
 
 
 def agb(request):

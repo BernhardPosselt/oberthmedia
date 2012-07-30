@@ -1,0 +1,12 @@
+{% extends 'homepage/text.html' %}
+{% load i18n %}
+{% load url from future %}
+
+{% block title %}{% trans 'Oberth-Media - Danke für Ihre Anfrage' %}{% endblock %}
+
+{% block page_title %}{% trans 'Danke für Ihre Anfrage' %}{% endblock %}
+
+{% block text %}
+<p>{% blocktrans %}Wir haben Ihre Anfrage erhalten und werden uns so schnell wie
+    möglich bei Ihnen melden!{% endblocktrans %}</p>
+{% endblock %}
