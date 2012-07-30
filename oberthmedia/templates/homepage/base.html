@@ -28,9 +28,15 @@ und Flyergestaltung{% endblocktrans %}
             
             <nav>
                 <ul>
-                    <li><a href="{% url 'homepage:index' %}">{% trans 'Referenzen' %}</a></li>
-                    <li><a href="{% url 'homepage:about' %}">{% trans 'Über uns' %}</a></li>
-                    <li><a href="{% url 'homepage:contact' %}">{% trans 'Kontakt' %}</a></li>
+                    <li {% if active_tab == "index" %}class="active"{% endif %}>
+                        <a href="{% url 'homepage:index' %}">{% trans 'Referenzen' %}</a>
+                    </li>
+                    <li {% if active_tab == "about" %}class="active"{% endif %}>
+                        <a href="{% url 'homepage:about' %}">{% trans 'Über uns' %}</a>
+                    </li>
+                    <li {% if active_tab == "contact" %}class="active"{% endif %}>
+                        <a href="{% url 'homepage:contact' %}">{% trans 'Kontakt' %}</a>
+                    </li>
                 </ul>
             </nav>
             <div id="twitter"></div>
