@@ -34,13 +34,13 @@ def about(request):
 def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
-        if form.is_valid:
+        if form.is_valid():
             form.save()
             return HttpResponseRedirect(reverse('homepage:contact'))
     else:
         form = ContactForm()
     ctx = {
-        'form': form,
+        'contact_form': form,
         "active_tab": "contact"
     }
     return render(request, 'homepage/contact.html', ctx)

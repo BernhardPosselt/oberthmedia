@@ -15,7 +15,7 @@ class Contact(models.Model):
         help_text=_(u"Unter welcher Telefon-Nummer..."))
     phonetime = models.CharField(_(u"Anruf möglich um"), max_length=200,
         blank=True, help_text=_(u"Wann wollen Sie angerufen werden?"))
-    email = models.EmailField(_(u"E-Mail"), max_length=200, help_text=_("...\
+    email = models.EmailField(_(u"E-Mail"), max_length=200, help_text=_(u"...\
         oder welcher E-Mail Adresse dürfen wir Ihnen antworten?"))
     message = models.TextField(_(u"Nachricht"), help_text=_(u"Was haben Sie für \
         Wünsche?"))

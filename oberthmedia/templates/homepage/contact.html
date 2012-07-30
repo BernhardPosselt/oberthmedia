@@ -2,12 +2,19 @@
 {% load i18n %}
 {% load url from future %}
 
-{% load webdesign %}
-
 {% block title %}{% trans 'Oberth-Media - Kontakt' %}{% endblock %}
 
-{% block page_title %}{% trans 'Kontakt' %}{% endblock %}
+{% block page_title %}{% trans 'Kontaktieren Sie uns' %}{% endblock %}
 
 {% block text %}
-    {% lorem 6 p %}
+    <form action="{% url 'homepage:contact' %}" method="post">
+        {% csrf_token %}
+        <div class="form">
+            {% for field in contact_form %}
+            <div class="line"><div class="name">{{ field.help_text }}</div><div class="field">{{ field }}</div></div>
+            {% endfor %}
+            <div class="line"><input type="submit" value="{% blocktrans %}Nachricht absenden{% endblocktrans %}" /></div>
+        </div>
+    </form>
+    <p style="clear:both"></p>
 {% endblock %}

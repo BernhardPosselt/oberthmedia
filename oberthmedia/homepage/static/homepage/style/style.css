@@ -217,7 +217,6 @@ nav {
     #content .text {
         background-color: rgba(255, 255, 255, 0.25);
         padding-bottom: 25px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     #content .title {
@@ -324,6 +323,62 @@ nav {
                 margin: 0;
                 padding: 0;
             }
+
+    #content .form {
+        width: 900px;
+        margin: auto;
+    }
+        #content .form .line {
+            float: left;
+            background-color: rgba(255, 255, 255, 0.4);
+            font-size: 12pt;          
+            margin-bottom: 10px;
+            line-height: 40px;
+            width: 100%;
+        }
+
+            #content .form .name {
+                float: left;
+                height: 40px;
+                width: 425px;
+                padding-left: 10px;
+            }
+
+            #content .form .field {
+                float: left;
+                height: 40px;
+                width: 465px;
+                background-color: rgba(255, 255, 255, 0.25);
+            }
+
+        #content .form input, #content .form textarea {
+            border: 0;
+            padding-left: 10px;
+            float: right;
+            background: rgba(255, 255, 255, 0);
+        }
+
+        #content .form textarea {
+            width: 450px;
+        }
+
+        #content .form input {
+            width: 450px;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        #content .form input[type=submit] {
+            width: 100%;
+            color: #263747;
+            text-align: center;
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.25)
+        }
+
+        #content .form .line:nth-child(5) .field {
+            height: 200px;
+        }
 /**
  * Footer
  */
