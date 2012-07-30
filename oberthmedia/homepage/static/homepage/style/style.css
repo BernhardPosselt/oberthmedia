@@ -62,9 +62,9 @@ body, html {
     width: 1024px;
     padding-top: 70px;
     margin: auto;
-    background-image: url('img/cloud.png');
-    background-repeat: no-repeat;
-    background-position: 600px 50px;
+    background-image: url('img/cloud.png'), url('img/cloud.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 15px, 700px 50px;
 }
 
 /**
@@ -75,9 +75,7 @@ header {
 }
 
     header #logo {
-        background-image: url('img/cloud.png');
-        background-position: 0 15px;
-        background-repeat: no-repeat;
+        padding-right: 20px;
     }
 
 /**
@@ -85,6 +83,7 @@ header {
  */
 nav {
     float: left;
+    margin-left: 25px;
 }
     nav h1 {
         margin: 0;
@@ -101,6 +100,7 @@ nav {
         background-image: -webkit-linear-gradient(top, rgb(33,47,61) 0%, rgb(20,29,38) 100%);
         background-image: -ms-linear-gradient(top, rgb(33,47,61) 0%, rgb(20,29,38) 100%);
         height: 46px;
+        width: 500px;
         margin: 0;
         padding: 0;
         float: left;
@@ -142,6 +142,8 @@ nav {
  */
 #news {
     float: left;
+    margin-left: 5px;
+    width: 300px;
 }
 
     #news h1 {
@@ -157,6 +159,7 @@ nav {
         background-image: -moz-linear-gradient(top, rgb(168,18,23) 0%, rgb(127,23,28) 100%);
         background-image: -webkit-linear-gradient(top, rgb(168,18,23) 0%, rgb(127,23,28) 100%);
         background-image: -ms-linear-gradient(top, rgb(168,18,23) 0%, rgb(127,23,28) 100%);
+        padding: 0 10px;
         height: 46px;
     }
 
