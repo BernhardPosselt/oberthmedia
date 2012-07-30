@@ -70,6 +70,15 @@ $(document).ready(function(){
             $("#id_phonetime").parent().parent().slideUp();
         }
     });
+
+    $("#contact_form .required :input").keyup(function(){
+        if($(this).val() !== ""){
+            $(this).parent().removeClass("requiredbg");
+        } else {
+            $(this).parent().addClass("requiredbg");
+        }
+    })
+
 });
 
 function toggle_night(){
