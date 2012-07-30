@@ -24,13 +24,13 @@ und Flyergestaltung{% endblocktrans %}
     <div id="site">
         <!--[if lte IE 8]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
         <div id="main">
-            
+
             <header>
                 <a href="{% url 'homepage:index' %}"><img src="{{ STATIC_URL }}homepage/img/logo.png" alt="logo"/></a>
             </header>
             
             <nav>
-                <h1><b>Werbeagentur</b> aus <b>Rostock</b>.</h1>
+                <h1><b>WERBEAGENTUR</b> AUS <b>ROSTOCK</b>.</h1>
                 <ul>
                     <li {% if active_tab == "index" %}class="active"{% endif %}>
                         <a href="{% url 'homepage:index' %}">{% trans 'Referenzen' %}</a>
@@ -46,8 +46,10 @@ und Flyergestaltung{% endblocktrans %}
 
 
             <div id="news">
-                <h1>News</h1>
-                <div id="twitter"></div>
+                <h1>NEWS</h1>
+                <div id="twitter">
+                    <p>hi</p>
+                </div>
             </div>
 
             <div id="content">{% block content %}{% endblock %}</div>
