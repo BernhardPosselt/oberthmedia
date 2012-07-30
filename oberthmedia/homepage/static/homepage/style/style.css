@@ -59,7 +59,7 @@ body, html {
     width: 1024px;
     margin: auto;
     background-image: url('img/cloud.png'), url('img/cloud.png');
-    background-position: 0 15px, 600px 50px;
+    background-position: 600px 50px;
     background-repeat: no-repeat;
 }
 
@@ -69,6 +69,12 @@ body, html {
 header {
     float: left;
 }
+
+    header #logo {
+        background-image: url('img/cloud.png');
+        background-position: 0 15px;
+        background-repeat: no-repeat;
+    }
 
 /**
  * Navigation
@@ -165,6 +171,22 @@ nav {
     clear: both;
 }
 
+    #content p {
+        line-height: 1.5;
+    }
+
+    #content .foss {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        background-color: #fefefe;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #content .foss table {
+        width: 100%;
+    }
 /**
  * Footer
  */

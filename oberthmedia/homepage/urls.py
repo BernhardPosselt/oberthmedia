@@ -10,7 +10,7 @@ urlpatterns = patterns('oberthmedia.homepage.views.main',
     url(r'^about/$', 'about', name='about'),
     url(r'^contact/$', 'contact', name='contact'),
     url(r'^agb/$', 'agb', name='agb'),
-    url(r'^sitenotice/$', 'sitenotice', name='sitenotice'),
+    url(r'^impressum/$', 'sitenotice', name='sitenotice'),
     url(r'^js/settings/', 'js_settings', name='js_settings'),
     #url(r'^logout/', 'logout_to_index', name='logout_to_index'),
 )

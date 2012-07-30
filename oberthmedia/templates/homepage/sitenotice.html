@@ -2,12 +2,102 @@
 {% load i18n %}
 {% load url from future %}
 
-{% load webdesign %}
-
 {% block title %}{% trans 'Oberth-Media - Impressum' %}{% endblock %}
 
 {% block page_title %}{% trans 'Impressum' %}{% endblock %}
 
 {% block text %}
-    {% lorem 6 p %}
+
+<p>{% trans 'Oberth Media haftet nicht für weiterführende Links.' %}</p>
+<table>
+    <tr>
+        <th>{% trans 'Firma:' %}</th>
+        <td>{% trans 'Julian Oberth und Karsten Janke Media GbR' %}</td>
+    </tr>
+    <tr>
+        <th>{% trans 'Steuernummer:' %}</th>
+        <td>079/156/15702</td>
+    </tr>
+    <tr>
+        <th>{% trans 'USt-IdNr.:' %}</th>
+        <td>DE270658777</td>
+    </tr>
+</table>
+
+<p></p>
+
+<p>{% trans 'Oberth Media besteht aus' %}</p>
+<table>
+    <tr>
+        <th>{% trans 'Vorname:' %}</th>
+        <td>Julian Amadeus Herrmann</td>
+    </tr>
+    <tr>
+        <th>{% trans 'Nachname:' %}</th>
+        <td>Oberth</td>
+    </tr>
+    <tr>
+        <th>{% trans 'Anschrift:' %}</th>
+        <td>Max-Maddalena-Straße 20<br/>
+            18069 Rostock</td>
+    </tr>
+    <tr>
+        <th>{% trans 'E-Mail:' %}</th>
+        <td>julian.oberth@oberth-media.de</td>
+    </tr>
+    <tr>
+        <th>{% trans 'Mobil:' %}</th>
+        <td>0152 535 75 535</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>{% trans 'Vorname:' %}</th>
+        <td>Karsten</td>
+    </tr>
+    <tr>
+        <th>{% trans 'Nachname:' %}</th>
+        <td>Janke</td>
+    </tr>
+    <tr>
+        <th>{% trans 'Anschrift:' %}</th>
+        <td>Elisabethstraße 8<br/>
+            18057 Rostock</td>
+    </tr>
+    <tr>
+        <th>{% trans 'E-Mail:' %}</th>
+        <td>karsten.janke@oberth-media.de</td>
+    </tr>
+    <tr>
+        <th>Jabber:</th>
+        <td>eipott@jabber.ccc.de</td>
+    </tr>
+</table>
+
+<p>{% trans 'Wir danken: ' %}</p>
+<table>
+    <tr>
+        <th>{% trans 'Code' %}</th>
+        <td><a href="http://bernhard-posselt.com/">Bernhard Posselt</a></td>
+    </tr>
+</table>
+
+<p>{% trans 'Ein weiterer Dank geht an folgende Open Source Projekte:' %}</p>
+<div class="foss">
+    <table>
+        <tr>
+            <td><a href="http://jquery.com/"><img src="{{ STATIC_URL }}homepage/img/pages/jquery.png" alt="jQuery" /></a></td>
+            <td><a href="http://www.djangoproject.com/"><img src="{{ STATIC_URL }}homepage/img/pages/django.gif" alt="Django" /></a></td>
+            <td><a href="http://python.org/"><img src="{{ STATIC_URL }}homepage/img/pages/python.png" alt="Python" /></a></td>
+            <td><a href="http://dev.mysql.com/"><img src="{{ STATIC_URL }}homepage/img/pages/mysql.png" alt="Mysql" /></a></td>
+        </tr>
+        <tr>
+            <td><a href="http://debian.org/"><img src="{{ STATIC_URL }}homepage/img/pages/debian.png" alt="Debian GNU/Linux"/></a></td>
+            <td><a href="http://gimp.org/"><img src="{{ STATIC_URL }}homepage/img/pages/gimp.png" alt="Gimp"/></a></td>
+            <td><a href="http://inkscape.org/"><img src="{{ STATIC_URL }}homepage/img/pages/inkscape.png" alt="Inkscape"/></a></td>
+            <td><a href="http://httpd.apache.org/"><img src="{{ STATIC_URL }}homepage/img/pages/apache.gif" alt="Apache" /></a></td>
+        </tr>
+    </table>
+</div>
 {% endblock %}

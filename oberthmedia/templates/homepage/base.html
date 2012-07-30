@@ -26,11 +26,15 @@ und Flyergestaltung{% endblocktrans %}
         <div id="main">
 
             <header>
-                <a href="{% url 'homepage:index' %}"><img src="{{ STATIC_URL }}homepage/img/logo.png" alt="logo"/></a>
+                <div id="logo">
+                    <a href="{% url 'homepage:index' %}">
+                        <img src="{{ STATIC_URL }}homepage/img/logo.png" alt="logo"/>
+                    </a>
+                </div>
             </header>
             
             <nav>
-                <h1><b>WERBEAGENTUR</b> AUS <b>ROSTOCK</b>.</h1>
+                <h1>{% blocktrans %}<b>WERBEAGENTUR</b> AUS <b>ROSTOCK</b>.{% endblocktrans %}</h1>
                 <ul>
                     <li {% if active_tab == "index" %}class="active"{% endif %}>
                         <a href="{% url 'homepage:index' %}">{% trans 'Referenzen' %}</a>
@@ -54,7 +58,13 @@ und Flyergestaltung{% endblocktrans %}
 
             <div id="content">{% block content %}{% endblock %}</div>
         
-            <footer>{% block footer %}{% endblock %}</footer>
+            <footer>
+                <ul>
+                    <li><a href="{% url 'homepage:agb' %}">{% trans 'AGB' %}</a></li>
+                    <li>·</li>
+                    <li><a href="{% url 'homepage:sitenotice' %}">{% trans 'Impressum' %}</a></li>
+                </ul>   
+            </footer>
         </div>
     
     </div>
