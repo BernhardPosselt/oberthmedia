@@ -244,6 +244,7 @@ nav {
             background-image: -moz-linear-gradient(top, rgb(33,47,61) 0%, rgb(20,29,38) 100%);
             background-image: -webkit-linear-gradient(top, rgb(33,47,61) 0%, rgb(20,29,38) 100%);
             background-image: -ms-linear-gradient(top, rgb(33,47,61) 0%, rgb(20,29,38) 100%);
+            font-weight: normal;
         }
 
     #content p {
