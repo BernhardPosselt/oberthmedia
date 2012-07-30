@@ -14,6 +14,7 @@ $(document).ready(function(){
      */
     var twitterUser = "OberthMedia";
     var twitterUrl = "http://search.twitter.com/" + twitterUser + ".json&callback=?&count=1" ;
+    
     $.getJSON(twitterUrl, function(json){
         $("#twitter").html(json.followers_count);
     });
