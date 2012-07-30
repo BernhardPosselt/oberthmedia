@@ -50,11 +50,11 @@ body, html {
 }
 
 #site.night {
-    background-image: url('img/bg.png'), linear-gradient(top, rgb(42,76,103) 0%, rgb(65,105,122) 20%, rgb(63,79,122) 80%, rgb(46,68,86) 100%);
-    background-image: url('img/bg.png'), -o-linear-gradient(top, rgb(42,76,103) 0%, rgb(65,105,122) 20%, rgb(63,79,122) 80%, rgb(46,68,86) 100%);
-    background-image: url('img/bg.png'), -moz-linear-gradient(top, rgb(42,76,103) 0%, rgb(65,105,122) 20%, rgb(63,79,122) 80%, rgb(46,68,86) 100%);
-    background-image: url('img/bg.png'), -webkit-linear-gradient(top, rgb(42,76,103) 0%, rgb(65,105,122) 20%, rgb(63,79,122) 80%, rgb(46,68,86) 100%);
-    background-image: url('img/bg.png'), -ms-linear-gradient(top, rgb(42,76,103) 0%, rgb(65,105,122) 20%, rgb(63,79,122) 80%, rgb(46,68,86) 100%);
+    background-image: url("img/night-skyline-rostock.png"), url('img/bg.png'), linear-gradient(top, rgb(42,76,103) 0%, rgb(65,105,122) 20%, rgb(63,79,122) 80%, rgb(46,68,86) 100%);
+    background-image: url("img/night-skyline-rostock.png"), url('img/bg.png'), -o-linear-gradient(top, rgb(42,76,103) 0%, rgb(65,105,122) 20%, rgb(63,79,122) 80%, rgb(46,68,86) 100%);
+    background-image: url("img/night-skyline-rostock.png"), url('img/bg.png'), -moz-linear-gradient(top, rgb(42,76,103) 0%, rgb(65,105,122) 20%, rgb(63,79,122) 80%, rgb(46,68,86) 100%);
+    background-image: url("img/night-skyline-rostock.png"), url('img/bg.png'), -webkit-linear-gradient(top, rgb(42,76,103) 0%, rgb(65,105,122) 20%, rgb(63,79,122) 80%, rgb(46,68,86) 100%);
+    background-image: url("img/night-skyline-rostock.png"), url('img/bg.png'), -ms-linear-gradient(top, rgb(42,76,103) 0%, rgb(65,105,122) 20%, rgb(63,79,122) 80%, rgb(46,68,86) 100%);
 }
 
 #main {
@@ -225,7 +225,7 @@ nav {
  */
 
 footer {
-    padding-top: 50px;
+    padding-top: 100px;
     height: 100px;
 }
 
