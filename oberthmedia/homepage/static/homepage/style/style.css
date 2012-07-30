@@ -258,6 +258,29 @@ nav {
         font-size: 14pt;
     }
 
+    #content p.sitenotice {
+        margin: 25px 25px 25px 95px;
+        color: #263747;
+    }
+
+    #content table.sitenotice {
+        margin: 25px 25px 15px 25px;
+        color: #263747;
+    }
+
+        #content table.sitenotice th {
+            text-align: right;
+            width: 190px;
+        }
+
+        #content table.sitenotice td {
+            padding-left: 10px;
+        }
+
+            #content table.sitenotice td a {
+                color: #263747;
+            }        
+
     #content .foss {
         box-sizing: border-box;
         -moz-box-sizing: border-box;
