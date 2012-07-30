@@ -45,14 +45,14 @@ def contact(request):
 
 def agb(request):
     ctx = {
-        "active_tab": "index"
+        "active_tab": "agb"
     }
     return render(request, 'homepage/agb.html', ctx)
 
 
 def sitenotice(request):
     ctx = {
-        "active_tab": "index"
+        "active_tab": "sitenotice"
     }
     return render(request, 'homepage/sitenotice.html', ctx)
 

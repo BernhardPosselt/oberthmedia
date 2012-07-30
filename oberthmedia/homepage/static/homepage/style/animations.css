@@ -1,0 +1,23 @@
+/**
+ * Animations
+ */
+@-keyframes cloud-movement {  
+    from, to { background-position: 600px 50px; }  
+    50% { background-position: 603px 58px; }  
+}
+@-webkit-keyframes cloud-movement {  
+    from, to { background-position: 600px 50px; }  
+    50% { background-position: 603px 58px; }  
+}  
+@-moz-keyframes cloud-movement {  
+    from, to { background-position: 600px 50px, 0 15px; }  
+    50% { background-position: 603px 58px; }  
+}  
+@-o-keyframes cloud-movement {  
+    from, to { background-position: 600px 50px; }  
+    50% { background-position: 603px 58px; }  
+}  
+@-ms-keyframes cloud-movement {  
+    from, to { background-position: 600px 50px; }  
+    50% { background-position: 603px 58px; }  
+}   

@@ -7,6 +7,7 @@
 {% block extra_head %}
     <link rel="icon" type="image/png" href="{{ STATIC_URL }}homepage/img/favicon.png"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}homepage/style/style.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}homepage/style/animations.css" type="text/css" media="all"/>
     <script src="{{ STATIC_URL }}homepage/script/settings.js" type="text/javascript" charset="utf-8"></script>
     <script src="{{ STATIC_URL }}homepage/script/main.js" type="text/javascript" charset="utf-8"></script>
 {% endblock %}
@@ -60,9 +61,13 @@ und Flyergestaltung{% endblocktrans %}
         
             <footer>
                 <ul>
-                    <li><a href="{% url 'homepage:agb' %}">{% trans 'AGB' %}</a></li>
+                    <li {% if active_tab == "agb" %}class="active"{% endif %}>
+                        <a href="{% url 'homepage:agb' %}">{% trans 'AGB' %}</a>
+                    </li>
                     <li>·</li>
-                    <li><a href="{% url 'homepage:sitenotice' %}">{% trans 'Impressum' %}</a></li>
+                    <li {% if active_tab == "sitenotice" %}class="active"{% endif %}>
+                        <a href="{% url 'homepage:sitenotice' %}">{% trans 'Impressum' %}</a>
+                    </li>
                 </ul>   
             </footer>
         </div>
