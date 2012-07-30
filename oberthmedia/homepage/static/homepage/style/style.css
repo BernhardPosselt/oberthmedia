@@ -64,7 +64,7 @@ body, html {
     margin: auto;
     background-image: url('img/cloud.png'), url('img/cloud.png');
     background-repeat: no-repeat, no-repeat;
-    background-position: 0 15px, 700px 50px;
+    background-position: 0 15px, 700px 100px;
 }
 
 /**
