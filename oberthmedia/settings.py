@@ -29,7 +29,7 @@ if PRODUCTION:
         'default': {
             'ENGINE': 'django.db.mysql.',
             'NAME': 'oberthmedia',
-            'USER': 'oberthmedia',
+            'USER': '',
             'PASSWORD': '',
             'HOST': '',  # Set to empty string for localhost. Not used with sqlite3.
             'PORT': '',  # Set to empty string for default. Not used with sqlite3.
@@ -155,6 +155,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.webdesign',
     'oberthmedia',
     'oberthmedia.homepage',
     'django.contrib.admin',

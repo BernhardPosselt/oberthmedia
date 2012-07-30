@@ -1,11 +1,13 @@
-{% extends 'homepage/base.html'%}
+{% extends 'homepage/text.html' %}
+{% load i18n %}
+{% load url from future %}
+
 {% load webdesign %}
 
-{% block description %}{% endblock %}
+{% block title %}{% trans 'Oberth-Media - Allgemeine Geschäftsbedingungen' %}{% endblock %}
 
-{% block content %}
-<div class="text">
+{% block page_title %}{% trans 'Allgemeine Geschäftsbedingungen' %}{% endblock %}
+
+{% block text %}
     {% lorem 6 p %}
-</div>
 {% endblock %}
-

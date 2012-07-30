@@ -26,13 +26,6 @@ def about(request):
     return render(request, 'homepage/about.html', ctx)
 
 
-def references(request, id):
-    ctx = {
-        "active_tab": "index"
-    }
-    return render(request, 'homepage/references.html', ctx)
-
-
 def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
@@ -56,7 +49,9 @@ def agb(request):
 
 
 def sitenotice(request):
-    ctx = {}
+    ctx = {
+        "active_tab": "index"
+    }
     return render(request, 'homepage/sitenotice.html', ctx)
 
 

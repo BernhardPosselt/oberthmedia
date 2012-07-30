@@ -1,20 +1,14 @@
-{% extends 'homepage/base.html'%}
+{% extends 'homepage/text.html' %}
+{% load i18n %}
+{% load url from future %}
+
 {% load webdesign %}
 
-{% block description %}{% endblock %}
+{% block title %}{% trans 'Oberth-Media - Über uns' %}{% endblock %}
 
-{% block nav_about %}class="active"{% endblock %}
+{% block page_title %}{% trans 'Über uns' %}{% endblock %}
 
-{% block content %}
-<div class="content">
-    <h1 class="page_title">Über uns</h1>
-    <div class="top_triangle"></div>
-    <img src="{{ STATIC_URL }}img/about.jpg"/>
-    <div class="img_effect"></div>
-    <div class="text">
-        {% lorem 6 p %}
-    </div>
-</div>
-
+{% block text %}
+    {% lorem 6 p %}
 {% endblock %}
 
