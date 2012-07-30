@@ -355,6 +355,17 @@ footer {
                 color: #4d2f1f;
             }
 
+        footer.night ul li {
+            display: inline-block;
+            color: #fefefe;
+        }
+
+
+            footer.night ul li a {
+                text-decoration: none;
+                color: #fefefe;
+            }
+
                 footer ul li a:hover {
                     text-decoration: underline;
                 }

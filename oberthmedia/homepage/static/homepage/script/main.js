@@ -19,10 +19,7 @@ $(document).ready(function(){
         $("#twitter").html(json.followers_count);
     });
     $("#twitter").click(function(){
-        $('#site').toggleClass('night');
-        $('#content p').toggleClass('night');
-        $('#content h1').toggleClass('night');
-        $('#main').toggleClass('night');
+        toggle_night();
     });
     $("#twitter").hover(
         function(){
@@ -62,3 +59,11 @@ $(document).ready(function(){
         }
     );
 });
+
+function toggle_night(){
+    $('#site').toggleClass('night');
+    $('#content p').toggleClass('night');
+    $('#content h1').toggleClass('night');
+    $('#main').toggleClass('night');
+    $('footer').toggleClass('night');
+}
