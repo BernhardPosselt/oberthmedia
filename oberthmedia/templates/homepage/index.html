@@ -5,13 +5,14 @@
 {% block title %}{% trans 'Oberth-Media - Werbeagentur aus Rostock'%}{% endblock %}
     
 {% block content %}
+<div class="title"><h1>{% trans 'Unsere Referenzen' %}</h1></div>
 <div class="references">
-    <div class="title"><h1>{% trans 'Unsere Referenzen' %}</h1></div>
     {% for ref in references %}
-        <div class="reference">
+        <div class="reference" style="{% if forloop.counter|divisibleby:'3' %}margin-right: 0;{% endif %}background-image: url('{{ STATIC_URL }}upload/{{ ref.cover }}');">
             <h2 class="reference_title">{{ ref.title }}</h2>
             <p class="reference_description">{{ ref.description }}</p>
         </div>  
     {% endfor %}
 </div>
+<div style="clear: both"></div>
 {% endblock %}

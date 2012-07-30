@@ -99,8 +99,9 @@ nav {
         background-image: -moz-linear-gradient(top, rgb(33,47,61) 0%, rgb(20,29,38) 100%);
         background-image: -webkit-linear-gradient(top, rgb(33,47,61) 0%, rgb(20,29,38) 100%);
         background-image: -ms-linear-gradient(top, rgb(33,47,61) 0%, rgb(20,29,38) 100%);
+        border: 1px solid #333;
         height: 46px;
-        width: 500px;
+        width: 498px;
         margin: 0;
         padding: 0;
         float: left;
@@ -144,7 +145,7 @@ nav {
 #news {
     float: left;
     margin-left: 5px;
-    width: 300px;
+    width: 298px;
 }
 
     #news h1 {
@@ -161,6 +162,7 @@ nav {
         background-image: -webkit-linear-gradient(top, rgb(168,18,23) 0%, rgb(127,23,28) 100%);
         background-image: -ms-linear-gradient(top, rgb(168,18,23) 0%, rgb(127,23,28) 100%);
         height: 46px;
+        border: 1px solid rgb(127,23,28);
     }
 
         #news #twitter p {
@@ -174,8 +176,9 @@ nav {
             background-image: url("img/upper-right-corner.png");
             height: 14px;
             width: 18px;
-            margin-top: -14px;
+            margin-top: -15px;
             float: right;
+            margin-right: -1px;
         }
 /**
  * Content
@@ -204,6 +207,7 @@ nav {
     }
 
         #content .title h1 {
+            border: 1px solid #333;
             padding: 0 28px 0 28px;
             margin: 0;
             color: #fefefe;
@@ -240,6 +244,21 @@ nav {
     #content .foss table {
         width: 100%;
     }
+
+    #content .references {
+        float: left;
+        margin-top: -50px;
+    }
+
+        #content .references .reference {
+            background-size: 100%;
+            width: 334px;
+            height: 360px;
+            margin-right: 11px;
+            float: left;
+            margin-bottom: 11px;
+        }
+
 /**
  * Footer
  */
