@@ -169,11 +169,26 @@ nav {
     }
 
         #news #twitter p {
-            margin: 0;
             color: #fefefe;
-            line-height: 46px;
-            padding: 0 10px;
+            padding-left: 10px;
+            margin: 0;
+            margin-top: 8px;
+            font-size: 9pt;
         }
+
+            #news #twitter p .social {
+                display: none;
+            }
+
+                #news #twitter p a {
+                    color: #fefefe;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+
+                    #news #twitter p a:hover {
+                        text-decoration: underline;
+                    }
 
         #news #twitter .upper_right_corner {
             background-image: url("img/upper-right-corner.png");
@@ -276,7 +291,8 @@ nav {
             }
 
             #content .references .reference:hover .reference_image {
-                opacity: 0.15;
+                background: none !important;
+                background-color: #97b7c1;
             }                
 
             #content .references .reference .reference_details {
