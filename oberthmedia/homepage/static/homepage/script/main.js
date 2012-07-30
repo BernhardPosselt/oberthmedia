@@ -38,6 +38,9 @@ $(document).ready(function(){
         }
     );
 
+    /**
+     * References effects
+     */
     $(".reference").hover(
         function(){
             var self = this;
@@ -56,6 +59,17 @@ $(document).ready(function(){
             }
         }
     );
+
+    /**
+     * Slide down telephone on input
+     */
+    $("#contact_form #id_phone").keyup(function(){
+        if($(this).val() !== ""){
+            $("#id_phonetime").parent().parent().slideDown();
+        } else {
+            $("#id_phonetime").parent().parent().slideUp();
+        }
+    });
 });
 
 function toggle_night(){

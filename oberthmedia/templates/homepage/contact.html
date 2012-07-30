@@ -7,11 +7,15 @@
 {% block page_title %}{% trans 'Kontaktieren Sie uns' %}{% endblock %}
 
 {% block text %}
+    <div class="form_errors">
     <form action="{% url 'homepage:contact' %}" method="post">
         {% csrf_token %}
-        <div class="form">
+        <div class="form" id="contact_form">
             {% for field in contact_form %}
-            <div class="line"><div class="name">{{ field.help_text }}</div><div class="field">{{ field }}</div></div>
+            <div title='{% for msg in field.errors %}{{ msg }}{% endfor %}' 
+                 class="line {% if field.errors %}error{% endif %}">
+                <div class="name">{{ field.help_text }}</div>
+                <div class="field">{{ field }}</div></div>
             {% endfor %}
             <div class="line"><input type="submit" value="{% blocktrans %}Nachricht absenden{% endblocktrans %}" /></div>
         </div>
