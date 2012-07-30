@@ -27,6 +27,7 @@ und Flyergestaltung{% endblocktrans %}
             <header>{% block header %}{% endblock %}</header>
             
             <nav>
+                <h1>Werbeagentur aus Rostock.</h1>
                 <ul>
                     <li {% if active_tab == "index" %}class="active"{% endif %}>
                         <a href="{% url 'homepage:index' %}">{% trans 'Referenzen' %}</a>
@@ -39,7 +40,12 @@ und Flyergestaltung{% endblocktrans %}
                     </li>
                 </ul>
             </nav>
-            <div id="twitter"></div>
+
+
+            <div id="news">
+                <h1>News</h1>
+                <div id="twitter"></div>
+            </div>
 
             <div id="content">{% block content %}{% endblock %}</div>
         

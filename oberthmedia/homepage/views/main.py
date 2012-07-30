@@ -10,11 +10,13 @@ from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
 
 from oberthmedia.homepage.forms import ContactForm
+from oberthmedia.homepage.models import Reference
 
 
 def index(request):
     ctx = {
-        "active_tab": "index"
+        "active_tab": "index",
+        "references": Reference.objects.filter(active=True)
     }
     return render(request, 'homepage/index.html', ctx)
 

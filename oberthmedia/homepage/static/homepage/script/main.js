@@ -8,4 +8,35 @@ $(document).ready(function(){
         // settings are in the settings object
         
     });
+
+    /**
+     * Twitter
+     */
+    var twitterUser = "OberthMedia";
+    var twitterUrl = "http://search.twitter.com/" + twitterUser + ".json&callback=?&count=1" ;
+    $.getJSON(twitterUrl, function(json){
+        $("#twitter").html(json.followers_count);
+    });
+    $("#twitter").click(function(){
+        $('#site').toggleClass('night');
+        $('#content p').toggleClass('night');
+        $('#content h1').toggleClass('night');
+        $('#cloud_wrapper').toggleClass('night');
+    });
+    $("#twitter").hover(
+        function(){
+            if(!$('#twitter .social').is(':animated') && !$('#twitter .descr').is(':animated')){
+                $('#twitter .descr').fadeOut(function(){
+                    $('#twitter .social').fadeIn();
+                });
+            }
+        }, 
+        function(){
+            if(!$('#twitter .social').is(':animated') && !$('#twitter .descr').is(':animated')){
+                $('#twitter .social').fadeOut(function(){
+                    $('#twitter .descr').fadeIn();
+                });
+            }
+        }
+    );
 });
