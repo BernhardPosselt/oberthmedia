@@ -44,6 +44,10 @@ class Reference(models.Model):
     def __unicode__(self):
         return self.title
 
+    def delete(self, *args, **kwargs):
+        self.cover.delete()
+        super(Reference, self).delete(*args, **kwargs)
+
     class Meta:
         verbose_name = _(u"Referenz")
         verbose_name_plural = _(u"Referenzen")
