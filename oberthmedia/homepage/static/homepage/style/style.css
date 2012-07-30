@@ -343,6 +343,15 @@ nav {
                 line-height: 1;
             }
 
+                #content .references .reference h2.reference_title a {
+                    text-decoration: none;
+                    color: #fefefe;
+                }
+
+                    #content .references .reference h2.reference_title a:hover {
+                        /*text-decoration: underline;*/
+                    }
+
             #content .references .reference p.reference_description {
                 word-wrap: break-word;   
                 color: #263747;

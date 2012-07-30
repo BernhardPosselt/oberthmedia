@@ -3,7 +3,7 @@
 
 import json
 
-from django.shortcuts import render  # ,get_object_or_404
+from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect
 from django.core.urlresolvers import reverse
 from django.contrib.auth import logout
@@ -22,6 +22,15 @@ def index(request):
         "generate_bulks": leftToGenerate
     }
     return render(request, 'homepage/index.html', ctx)
+
+
+def reference(request, refId):
+    ref = get_object_or_404(Reference, pk=refId)
+    ctx = {
+        "active_tab": "index",
+        "ref": ref
+    }
+    return render(request, 'homepage/reference.html', ctx)
 
 
 def about(request):

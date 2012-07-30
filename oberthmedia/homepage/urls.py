@@ -12,6 +12,7 @@ urlpatterns = patterns('oberthmedia.homepage.views.main',
     url(r'^agb/$', 'agb', name='agb'),
     url(r'^danke/$', 'contact_success', name='contact_success'),
     url(r'^impressum/$', 'sitenotice', name='sitenotice'),
+    url(r'^referenz/(?P<refId>\d+)/$', 'reference', name='reference'),
     url(r'^js/settings/', 'js_settings', name='js_settings'),
     #url(r'^logout/', 'logout_to_index', name='logout_to_index'),
 )
