@@ -1,6 +1,30 @@
 /**
  * Animations
  */
+
+#main {
+    animation-duration: 3s;  
+    animation-name: cloud-movement; 
+    animation-iteration-count: infinite;
+    transition-timing-function: ease-in-out;
+    -moz-animation-duration: 3s;  
+    -moz-animation-name: cloud-movement; 
+    -moz-animation-iteration-count: infinite;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-animation-duration: 3s;  
+    -webkit-animation-name: cloud-movement; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-animation-duration: 3s;  
+    -o-animation-name: cloud-movement; 
+    -o-animation-iteration-count: infinite;
+    -o-transition-timing-function: ease-in-out;
+    -ms-animation-duration: 3s;  
+    -ms-animation-name: cloud-movement; 
+    -ms-animation-iteration-count: infinite;
+    -ms-transition-timing-function: ease-in-out;
+}
+
 @-keyframes cloud-movement {  
     from, to { background-position: 600px 50px; }  
     50% { background-position: 603px 58px; }  
