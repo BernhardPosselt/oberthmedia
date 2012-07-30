@@ -1,0 +1,100 @@
+/**
+ * Fonts
+ */
+@font-face {
+    font-family: dejavusans;
+    src: url('font/DejaVuSansCondensed.ttf');
+}
+
+@font-face {
+    font-family: dejavusans;
+    font-weight: bold;
+    src: url('font/DejaVuSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: altehaas;
+    src: url('font/AlteHaasGroteskRegular.ttf');
+}
+
+@font-face {
+    font-family: altehaas;
+    font-weight: bold;
+    src: url('font/AlteHaasGroteskBold.ttf');
+}
+
+* {
+
+}
+
+
+/**
+ * Site
+ */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#site {
+    font-family: altehaas;
+    background-image: linear-gradient(bottom, rgb(173,95,61) 0%, rgb(220,179,131) 16%, rgb(214,214,186) 40%, rgb(95,147,169) 80%, rgb(55,100,135) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(173,95,61) 0%, rgb(220,179,131) 16%, rgb(214,214,186) 40%, rgb(95,147,169) 80%, rgb(55,100,135) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(173,95,61) 0%, rgb(220,179,131) 16%, rgb(214,214,186) 40%, rgb(95,147,169) 80%, rgb(55,100,135) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(173,95,61) 0%, rgb(220,179,131) 16%, rgb(214,214,186) 40%, rgb(95,147,169) 80%, rgb(55,100,135) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(173,95,61) 0%, rgb(220,179,131) 16%, rgb(214,214,186) 40%, rgb(95,147,169) 80%, rgb(55,100,135) 100%);
+    min-height: 100%;
+}
+
+#site.night {
+    background-image: linear-gradient(top, rgb(42,76,103) 0%, rgb(65,105,122) 20%, rgb(63,79,122) 80%, rgb(46,68,86) 100%);
+    background-image: -o-linear-gradient(top, rgb(42,76,103) 0%, rgb(65,105,122) 20%, rgb(63,79,122) 80%, rgb(46,68,86) 100%);
+    background-image: -moz-linear-gradient(top, rgb(42,76,103) 0%, rgb(65,105,122) 20%, rgb(63,79,122) 80%, rgb(46,68,86) 100%);
+    background-image: -webkit-linear-gradient(top, rgb(42,76,103) 0%, rgb(65,105,122) 20%, rgb(63,79,122) 80%, rgb(46,68,86) 100%);
+    background-image: -ms-linear-gradient(top, rgb(42,76,103) 0%, rgb(65,105,122) 20%, rgb(63,79,122) 80%, rgb(46,68,86) 100%);
+}
+
+/**
+ * Header
+ */
+header {
+
+}
+
+/**
+ * Navigation
+ */
+nav {
+
+}
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+            nav ul li a {
+                text-decoration: none;
+            }
+
+        nav ul li:hover {
+
+        }
+/**
+ * Content
+ */
+#content {
+
+}
+
+/**
+ * Footer
+ */
+footer {
+
+}

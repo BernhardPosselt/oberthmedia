@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load url from future %}
+
+{% block html %}data-settingsurl="{% block settings_url %}{% endblock %}{% url 'homepage:js_settings' %}"{% endblock %}
+
+{% block extra_head %}
+    <link rel="icon" type="image/png" href="{{ STATIC_URL }}homepage/img/favicon.png"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}homepage/style/style.css" type="text/css" media="all"/>
+    <script src="{{ STATIC_URL }}homepage/script/settings.js" type="text/javascript" charset="utf-8"></script>
+    <script src="{{ STATIC_URL }}homepage/script/main.js" type="text/javascript" charset="utf-8"></script>
+{% endblock %}
+
+{% block keywords %}
+{% blocktrans %}logo, design, banner, web, logodesign, oberth, media, flyer, druck, gestaltung, visitenkarten, rostock, werbeagentur, rostock, werbung, kompetent, schön, briefbögen, aufkleber, sticker, print, medien, mediengestaltung, hro, mv, plakate, logo, wort, bild, marke, plakat, plakate, einladungskarte, einladungskarten, individuell, qualität, hochwertig, broschüre, faltblätter, präsentationsmappen, briefümschläge, postkarten, durchschreibesätze, eintrittskarten, kartenbox, flyerbox, tischaufsteller, bierdeckel, getränkekarten, speisekarten, jahresplaner, bildkalender, kalender, ordner, plastikkarten, werbetechnik, geschenkpapier, vereinshefte, schreibtischunterlage, hochzeitszeitungen, backlightfolien, leuchtkästen, leuchtwerbung, reklame, bücher, türanhänger, magnetfolien, stempel, taufkarten, trauerkarten, präsentationsmappen, CI, corporate identity{% endblocktrans %}
+{% endblock %}
+{% block description %}
+{% blocktrans %}Oberth-Media ist eine junge Werbeagentur aus Rostock. Wir kümmern uns um Logodesign und 
+und Flyergestaltung{% endblocktrans %}
+{% endblock %}
+{% block authors %}Karsten Janke, Bernhard Posselt{% endblock %}
+
+{% block body %}
+    <div id="site">
+        <!--[if lte IE 8]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+        <div id="main">
+            <header>{% block header %}{% endblock %}</header>
+            
+            <nav>
+                <ul>
+                    <li><a href="{% url 'homepage:index' %}">{% trans 'Referenzen' %}</a></li>
+                    <li><a href="{% url 'homepage:about' %}">{% trans 'Über uns' %}</a></li>
+                    <li><a href="{% url 'homepage:contact' %}">{% trans 'Kontakt' %}</a></li>
+                </ul>
+            </nav>
+            <div id="twitter"></div>
+
+            <div id="content">{% block content %}{% endblock %}</div>
+        
+            <footer>{% block footer %}{% endblock %}</footer>
+        </div>
+    
+    </div>
+{% endblock %}
+        
+
+    
