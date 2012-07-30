@@ -264,6 +264,10 @@ nav {
             z-index: 1;
         }
 
+                #content .references .reference:hover {
+
+                }                
+
                 #content .references .reference .reference_details {
                     display: none;
                     background-color: rgba(0, 0, 0, 1);
