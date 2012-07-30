@@ -22,7 +22,7 @@ $(document).ready(function(){
         $('#site').toggleClass('night');
         $('#content p').toggleClass('night');
         $('#content h1').toggleClass('night');
-        $('#cloud_wrapper').toggleClass('night');
+        $('#main').toggleClass('night');
     });
     $("#twitter").hover(
         function(){
@@ -41,5 +41,24 @@ $(document).ready(function(){
         }
     );
 
-
+    $(".reference").hover(
+        function(){
+            var self = this;
+            if(!$(this).children('.reference_image').is(':animated') && 
+               !$(this).children('.reference_details').is(':animated')){
+                $(this).children('.reference_image').fadeOut('fast', function(){
+                    $(self).children('.reference_details').fadeIn('fast');
+                });
+            }
+        }, 
+        function(){
+            var self = this;
+            if(!$(this).children('.reference_image').is(':animated') && 
+               !$(this).children('.reference_details').is(':animated')){
+                $(this).children('.reference_details').fadeOut('fast', function(){
+                    $(self).children('.reference_image').fadeIn('fast');
+                });
+            }
+        }
+    );
 });

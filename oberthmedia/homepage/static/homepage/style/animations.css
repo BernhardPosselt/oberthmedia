@@ -39,4 +39,44 @@
 @-ms-keyframes cloud-movement {  
     from, to { background-position: 0 15px, 700px 100px; }  
     50% { background-position: 0 28px, 703px 94px; }  
-}   
+}  
+
+
+#main.night {
+    animation-duration: 3s;  
+    animation-name: night-cloud-movement; 
+    animation-iteration-count: infinite;
+    -moz-animation-duration: 3s;  
+    -moz-animation-name: night-cloud-movement; 
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-duration: 3s;  
+    -webkit-animation-name: night-cloud-movement; 
+    -webkit-animation-iteration-count: infinite;
+    -o-animation-duration: 3s;  
+    -o-animation-name: night-cloud-movement; 
+    -o-animation-iteration-count: infinite;
+    -ms-animation-duration: 3s;  
+    -ms-animation-name: night-cloud-movement; 
+    -ms-animation-iteration-count: infinite;
+}
+
+@-keyframes night-cloud-movement {  
+    from, to { background-position: 0 15px, 700px 100px, 950px 30px; }  
+    50% { background-position: 0 28px, 703px 94px, 950px 30px; }  
+}
+@-webkit-keyframes night-cloud-movement {  
+    from, to { background-position: 0 15px, 700px 100px, 950px 30px; }  
+    50% { background-position: 0 28px, 703px 94px, 950px 30px; }  
+}  
+@-moz-keyframes night-cloud-movement {  
+    from, to { background-position: 0 15px, 700px 100px, 950px 30px; }  
+    50% { background-position: 0 28px, 703px 94px, 950px 30px; }  
+}  
+@-o-keyframes night-cloud-movement {  
+    from, to { background-position: 0 15px, 700px 100px, 950px 30px; }  
+    50% { background-position: 0 28px, 703px 94px, 950px 30px; }  
+}  
+@-ms-keyframes night-cloud-movement {  
+    from, to { background-position: 0 15px, 700px 100px, 950px 30px; }  
+    50% { background-position: 0 28px, 703px 94px, 950px 30px; }  
+}  

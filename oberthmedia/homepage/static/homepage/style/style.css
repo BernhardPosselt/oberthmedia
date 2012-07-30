@@ -70,6 +70,12 @@ body, html {
     background-position: 0 15px, 700px 100px;
 }
 
+#main.night {
+    background-image: url('img/cloud.png'), url('img/cloud.png'), url('img/moon.png');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 0 15px, 700px 100px, 950px 30px;
+}
+
 /**
  * Header
  */
@@ -288,26 +294,18 @@ nav {
                 height: 100%;
                 background-repeat: no-repeat;
                 background-size: 100%;   
-            }
-
-            #content .references .reference:hover .reference_image {
-                background: none !important;
                 background-color: #97b7c1;
-            }                
+            }
 
             #content .references .reference .reference_details {
                 display: none;
+                position: relative;
+                margin-top: 120px;
                 box-sizing: border-box;
                 -moz-box-sizing: border-box;
                 padding: 20px;
                 width: 100%;
-                position: absolute;
-                z-index: 3;
-                top: 120px;
-            }
-
-            #content .references .reference:hover .reference_details {
-                display: block;
+                z-index: 1;
             }
 
             #content .references .reference h2.reference_title {
