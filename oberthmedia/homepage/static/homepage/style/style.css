@@ -37,6 +37,7 @@ body, html {
 }
 
 #site {
+    position: relative;
     font-family: altehaas;
     background-image: url("img/skyline-rostock.png"), url('img/bg.png'), linear-gradient(bottom, rgb(173,95,61) 0%, rgb(220,179,131) 16%, rgb(214,214,186) 40%, rgb(95,147,169) 80%, rgb(55,100,135) 100%);
     background-image: url("img/skyline-rostock.png"), url('img/bg.png'), -o-linear-gradient(bottom, rgb(173,95,61) 0%, rgb(220,179,131) 16%, rgb(214,214,186) 40%, rgb(95,147,169) 80%, rgb(55,100,135) 100%);
@@ -58,8 +59,8 @@ body, html {
 }
 
 #main {
-    padding-top: 50px;
     width: 1024px;
+    padding-top: 70px;
     margin: auto;
     background-image: url('img/cloud.png');
     background-repeat: no-repeat;
@@ -170,6 +171,7 @@ nav {
  */
 #content {
     padding-top: 40px;
+    padding-bottom: 200px;
     clear: both;
 }
 
@@ -205,12 +207,18 @@ nav {
  */
 
 footer {
-    padding-top: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 100px;
 }
 
     footer ul {
-        float: right;
+        width: 1024px;
+        padding: 0;
+        margin: auto;
+        text-align: right;
         list-style-type: none;
     }
 
