@@ -13,6 +13,9 @@
             <p class="reference_description">{{ ref.description }}</p>
         </div>  
     {% endfor %}
+    {% for i in generate_bulks %}
+        <div class="reference" style="{% if forloop.last %}margin-right: 0;{% endif %}"></div>
+    {% endfor %}
 </div>
 <div style="clear: both"></div>
 {% endblock %}

@@ -14,9 +14,12 @@ from oberthmedia.homepage.models import Reference
 
 
 def index(request):
+    refs = Reference.objects.filter(active=True)
+    leftToGenerate = range(3-(len(refs) % 3))
     ctx = {
         "active_tab": "index",
-        "references": Reference.objects.filter(active=True)
+        "references": refs,
+        "generate_bulks": leftToGenerate
     }
     return render(request, 'homepage/index.html', ctx)
 
