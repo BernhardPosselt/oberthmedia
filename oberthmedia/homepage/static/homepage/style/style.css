@@ -291,9 +291,11 @@ nav {
                     line-height: 1;
                 }
 
-                #content .references .reference .reference_description {
+                #content .references .reference p.reference_description {
                     word-wrap: break-word;   
                     color: #263747;
+                    margin: 0;
+                    padding: 0;
                 }
 /**
  * Footer
