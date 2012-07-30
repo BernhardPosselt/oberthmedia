@@ -140,6 +140,7 @@ nav {
 /**
  * Twitter
  */
+
 #news {
     float: left;
     margin-left: 5px;
@@ -159,7 +160,6 @@ nav {
         background-image: -moz-linear-gradient(top, rgb(168,18,23) 0%, rgb(127,23,28) 100%);
         background-image: -webkit-linear-gradient(top, rgb(168,18,23) 0%, rgb(127,23,28) 100%);
         background-image: -ms-linear-gradient(top, rgb(168,18,23) 0%, rgb(127,23,28) 100%);
-        padding: 0 10px;
         height: 46px;
     }
 
@@ -167,30 +167,64 @@ nav {
             margin: 0;
             color: #fefefe;
             line-height: 46px;
+            padding: 0 10px;
         }
 
+        #news #twitter .upper_right_corner {
+            background-image: url("img/upper-right-corner.png");
+            height: 14px;
+            width: 18px;
+            margin-top: -14px;
+            float: right;
+        }
 /**
  * Content
  */
+
 #content {
-    padding-top: 40px;
+    padding-top: 60px;
     padding-bottom: 200px;
     clear: both;
 }
 
     #content .text {
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        padding: 25px;
         background-color: rgba(255, 255, 255, 0.25);
+        padding-bottom: 25px;
     }
 
-    #content .page_title {
-
+    #content .title {
+        background-image: url("img/lower-left-corner.png");
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        margin-left: -18px;
+        margin-top: -10px;
+        display: inline-block;
+        padding-bottom: 14px;
     }
+
+        #content .title h1 {
+            padding: 0 28px 0 28px;
+            margin: 0;
+            color: #fefefe;
+            font-size: 16pt;
+            line-height: 46px;
+            display: inline-block;
+            background-image: linear-gradient(top, rgb(33,47,61) 0%, rgb(20,29,38) 100%);
+            background-image: -o-linear-gradient(top, rgb(33,47,61) 0%, rgb(20,29,38) 100%);
+            background-image: -moz-linear-gradient(top, rgb(33,47,61) 0%, rgb(20,29,38) 100%);
+            background-image: -webkit-linear-gradient(top, rgb(33,47,61) 0%, rgb(20,29,38) 100%);
+            background-image: -ms-linear-gradient(top, rgb(33,47,61) 0%, rgb(20,29,38) 100%);
+        }
 
     #content p {
+        margin: 0 25px 15px 25px;
         line-height: 1.5;
+    }
+
+    #content h2 {
+        margin: 15px 25px 0 25px;
+        line-height: 1.5;
+        font-size: 14pt;
     }
 
     #content .foss {
