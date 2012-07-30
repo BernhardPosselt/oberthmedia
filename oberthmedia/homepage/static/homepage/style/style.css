@@ -223,7 +223,7 @@ nav {
         background-image: url("img/lower-left-corner.png");
         background-repeat: no-repeat;
         background-position: bottom left;
-        margin-left: -19px;
+        margin-left: -18px;
         margin-top: -10px;
         display: inline-block;
         padding-bottom: 14px;
@@ -433,6 +433,35 @@ nav {
             height: 40px;
             text-align: center;
         }
+
+        #content #about {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 558px;
+            background-image: url("img/about.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin-bottom: 50px;
+        }
+
+            #content #about .about_header {
+                color: #263747;
+                background-color: rgba(255, 255, 255, 0.8);
+                width: 450px;
+                padding: 5px;
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+            }
+
+                #content #about .about_header h2 {
+                    font-size: 14pt;
+                }
+
+                #content #about .about_header p {
+                    
+                }
 /**
  * Footer
  */

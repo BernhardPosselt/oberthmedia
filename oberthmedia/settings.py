@@ -155,7 +155,6 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.webdesign',
     'oberthmedia',
     'oberthmedia.homepage',
     'django.contrib.admin',

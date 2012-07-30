@@ -1,14 +1,24 @@
-{% extends 'homepage/text.html' %}
+{% extends 'homepage/base.html' %}
 {% load i18n %}
 {% load url from future %}
 
-{% load webdesign %}
-
 {% block title %}{% trans 'Oberth-Media - Über uns' %}{% endblock %}
 
-{% block page_title %}{% trans 'Über uns' %}{% endblock %}
+{% block content %}
+<div id="about">
+    <div class="title"><h1>{% trans 'Über uns' %}</h1></div>
+    <div class="about_header">
+        <h2>{% trans 'Überschrift' %}</h2>
+        <p>{% blocktrans %}Während alle im Abiturstress versunken sind,
+            haben wir unsere eigene Werbeagentur gegründet.{% endblocktrans %}</p>
+        <p>{% blocktrans %}Ein steiniger Weg liegt als Selbständige hinter uns
+            und wir wollen Sie dabei unterstützen, dass Sie Ihren ebenso gut
+            meistern wie wir.{% endblocktrans %}</p>
+    </div>
+</div>
 
-{% block text %}
-    {% lorem 6 p %}
+<div class="text">
+    <div class="title"><h1>{% trans 'Kompetenzen' %}</h1></div>
+</div>
 {% endblock %}
 
