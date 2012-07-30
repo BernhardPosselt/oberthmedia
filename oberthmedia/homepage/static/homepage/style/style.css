@@ -190,13 +190,14 @@ nav {
     #content .text {
         background-color: rgba(255, 255, 255, 0.25);
         padding-bottom: 25px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     #content .title {
         background-image: url("img/lower-left-corner.png");
         background-repeat: no-repeat;
         background-position: bottom left;
-        margin-left: -18px;
+        margin-left: -19px;
         margin-top: -10px;
         display: inline-block;
         padding-bottom: 14px;
