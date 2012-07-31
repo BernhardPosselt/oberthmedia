@@ -10,6 +10,14 @@ $(document).ready(function(){
     });
 
     /**
+     * Switch to night mode when between 22:00 and 6:00 o clock
+     */
+    var hours = new Date().getHours();
+    if(hours >= 22  || hours <= 6){
+        toggle_night();
+    }
+
+    /**
      * Twitter
      */
     var twitterUser = "OberthMedia";
