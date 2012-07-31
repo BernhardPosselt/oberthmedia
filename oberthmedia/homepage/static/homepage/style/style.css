@@ -506,6 +506,15 @@ nav {
                 margin: 0;
                 padding-top: 25px;
             }
+
+    #content .ref_image {
+        margin-top: -52px;
+    }
+
+    #content .ref_text {
+        margin-top: 10px;
+    }
+
 /**
  * Footer
  */

@@ -7,5 +7,9 @@
 {% block page_title %}{% trans 'Referenz' %}: {{ ref.title }}{% endblock %}
 
 {% block text %}
-
+<img class="ref_image" src="{{ STATIC_URL }}upload/{{ ref.image }}" width="1024" alt="{% trans 'Referenzbild' %}"/>
+<div class="title"><h1>{% trans 'Auftragsbeschreibung' %}</h1></div>
+<div class="ref_text">
+    {{ ref.reference_description|safe }}
+</div>
 {% endblock %}

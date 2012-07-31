@@ -35,8 +35,12 @@ class Reference(models.Model):
     description = models.TextField(_(u"Kurzbeschreibung"),
         help_text=_(u"Zusammenfassender Einleitungstext, der über der Gallerie \
             angezeigt wird"))
+    reference_description = models.TextField(_(u"Referenzbeschreibung"),
+        help_text=_(u"Text, der auf der Referenzseite angezeigt wird, HTML ist erlaubt"))
     cover = models.ImageField(_(u"Vorschaubild"), help_text=_(u"Das kleine Bild, \
         welches in der Übersicht auftaucht (334px breit, 360px hoch)"), upload_to="references")
+    image = models.ImageField(_(u"Referenzbild"), help_text=_(u"Das Bild, \
+        welches auf der Referenzseite angezeigt wird (1024px breit, beliebig hoch)"), upload_to="references")
     timestamp = models.DateTimeField(_(u"Erstelldatum"), auto_now_add=True)
     active = models.BooleanField(_(u"Öffentlich"), help_text=_(u"Wenn gesetzt \
         erscheint der Eintrag in der Referenzgallerie"), default=True)
