@@ -50,11 +50,11 @@ def contact(request):
             sender = form.cleaned_data["name"]
             email = form.cleaned_data["email"]
             text = form.cleaned_data["message"]
-            link = "http://oberth-media.de/" + settings.ROOT_URL + "/admin/homepage/contact/"
-            message = "Sie haben eine neue Kontaktanfrage von %s <%s> erhalten: \n\n %s \n\n \
+            link = "http://oberth-media.de/" + settings.PROJECT_URL + "/admin/homepage/contact/"
+            message = u"Sie haben eine neue Kontaktanfrage von %s <%s> erhalten: \n\n %s \n\n \
                       Zur Kontaktanfragenübersicht: %s" % (sender, email, text, link)
             send_mail(
-                'Neue Kontaktanfrage von: %s' % sender,
+                u"Neue Kontaktanfrage von: %s" % sender,
                 message, settings.ADMINS[0][1],
                 [settings.ADMINS[0][1]], fail_silently=True)
             return HttpResponseRedirect(reverse('homepage:contact_success'))
