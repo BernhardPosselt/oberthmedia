@@ -47,6 +47,7 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
+            # send e-mail
             sender = form.cleaned_data["name"]
             email = form.cleaned_data["email"]
             text = form.cleaned_data["message"]
@@ -56,7 +57,7 @@ def contact(request):
             send_mail(
                 u"Neue Kontaktanfrage von: %s" % sender,
                 message, settings.ADMINS[0][1],
-                [settings.ADMINS[0][1]], fail_silently=True)
+                [settings.ADMINS[0][1]], fail_silently=False)
             return HttpResponseRedirect(reverse('homepage:contact_success'))
     else:
         form = ContactForm()

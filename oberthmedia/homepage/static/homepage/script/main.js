@@ -39,25 +39,10 @@ $(document).ready(function(){
         $("#twitter .descr").html(tweet);
     }); 
 
+    // TODO: Delete in production
     $("#twitter").click(function(){
         toggle_night();
     });
-    $("#twitter").hover(
-        function(){
-            if(!$('#twitter .social').is(':animated') && !$('#twitter .descr').is(':animated')){
-                $('#twitter .descr').fadeOut(function(){
-                    $('#twitter .social').fadeIn();
-                });
-            }
-        }, 
-        function(){
-            if(!$('#twitter .social').is(':animated') && !$('#twitter .descr').is(':animated')){
-                $('#twitter .social').fadeOut(function(){
-                    $('#twitter .descr').fadeIn();
-                });
-            }
-        }
-    );
 
     /**
      * References effects

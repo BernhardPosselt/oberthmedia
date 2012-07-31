@@ -20,6 +20,16 @@
             <div class="line"><input type="submit" value="{% blocktrans %}Nachricht absenden{% endblocktrans %}" /></div>
         </div>
     </form>
+    
+    <p style="clear:both"><br /></p>
+
+    <div class="title"><h1>{% trans 'Folgen Sie uns auf Facebook oder Twitter!' %}</h1></div>
+    <table class="contact_data">
+        <tr>
+            <td><b>{% trans 'Facebook' %}:</b> <a href="https://twitter.com/#!/OberthMedia">Link</a></td>
+            <td><b>{% trans 'Twitter' %}:</b> <a href="http://www.facebook.com/oberthmedia">Link</a></td>
+        </tr>   
+    </table>
 
     <p style="clear:both"><br /></p>
 
@@ -28,7 +38,7 @@
         <tr>
             <td><b>{% trans 'Büro' %}:</b> 0381 / 38 39 116</td>
             <td><b>{% trans 'Mobil' %}:</b> 0152 / 535 722 35</td>
-            <td><b>{% trans 'E-Mail' %}:</b> admin@oberth-media.de</td>
+            <td><b>{% trans 'E-Mail' %}:</b> <a href="mailto:admin@oberth-media.de">admin@oberth-media.de</a></td>
         </tr>   
     </table>
 {% endblock %}
