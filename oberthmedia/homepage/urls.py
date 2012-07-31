@@ -3,6 +3,7 @@
 
 # Django imports
 from django.conf.urls.defaults import *
+from django.views.generic import TemplateView
 
 # main views
 urlpatterns = patterns('oberthmedia.homepage.views.main',
@@ -14,6 +15,7 @@ urlpatterns = patterns('oberthmedia.homepage.views.main',
     url(r'^impressum/$', 'sitenotice', name='sitenotice'),
     url(r'^referenz/(?P<refId>\d+)/$', 'reference', name='reference'),
     url(r'^js/settings/', 'js_settings', name='js_settings'),
+    url(r'^404/', TemplateView.as_view(template_name="404.html")),
     #url(r'^logout/', 'logout_to_index', name='logout_to_index'),
 )
 

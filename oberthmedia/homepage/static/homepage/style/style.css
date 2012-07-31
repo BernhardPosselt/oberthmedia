@@ -359,6 +359,15 @@ nav {
                 padding: 0;
             }
 
+                #content .references .reference p.reference_description a {
+                    text-decoration: none;
+                    color: #263747;
+                }
+
+                    #content .references .reference p.reference_description a:hover {
+                        /*text-decoration: underline;*/
+                    }
+
     #content .form {
         width: 900px;
         margin: auto;
@@ -471,6 +480,28 @@ nav {
                 #content #about .about_header p {
                     
                 }
+
+        #content .error404 {
+            color: #263747;
+            background-color: rgba(255, 255, 255, 0.25);
+            width: 900px;
+            height: 400px;
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+            #content .error404 h1 {
+                font-size: 80pt;
+                margin: 0;
+                padding-top: 100px;
+            }
+
+            #content .error404 p {
+                font-size: 20pt;
+                margin: 0;
+                padding-top: 25px;
+            }
 /**
  * Footer
  */

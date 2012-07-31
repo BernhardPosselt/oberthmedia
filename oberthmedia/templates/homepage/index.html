@@ -12,7 +12,7 @@
             <div class="reference_image" style="background-image: url('{{ STATIC_URL }}upload/{{ ref.cover }}');"></div>
             <div class="reference_details">
                 <h2 class="reference_title"><a href="{% url 'homepage:reference' ref.id %}">{{ ref.title|upper }}</a></h2>
-                <p class="reference_description">{{ ref.description }}</p>
+                <p class="reference_description"><a href="{% url 'homepage:reference' ref.id %}">{{ ref.description }}</a></p>
             </div>
         </div>  
     {% endfor %}

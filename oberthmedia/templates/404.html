@@ -1,0 +1,14 @@
+{% extends 'homepage/text.html' %}
+{% load i18n %}
+{% load url from future %}
+
+{% block title %}{% trans 'Oberth-Media - Seite nicht gefunden!' %}{% endblock %}
+
+{% block page_title %}{% trans 'Seite nicht gefunden!' %}{% endblock %}
+
+{% block text %}
+    <div class="error404">
+        <h1>404</h1>
+        <p>{% trans 'Die von Ihnen angeforderte Seite konnte nicht gefunden werden! '%}</p>
+    </div>
+{% endblock %}
