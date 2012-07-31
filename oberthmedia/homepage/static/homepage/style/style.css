@@ -76,6 +76,17 @@ body, html {
     background-position: 0 15px, 700px 100px, 950px 30px;
 }
 
+.chromeframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+    background-color: #EDF261;
+}
+
 /**
  * Header
  */
