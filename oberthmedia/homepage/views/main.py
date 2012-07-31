@@ -3,8 +3,10 @@
 
 import json
 
+from django.conf import settings
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect
+from django.core.mail import send_mail
 from django.core.urlresolvers import reverse
 from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
@@ -45,6 +47,16 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
+            sender = form.cleaned_data["name"]
+            email = form.cleaned_data["email"]
+            text = form.cleaned_data["message"]
+            link = "http://oberth-media.de/" + settings.ROOT_URL + "/admin/homepage/contact/"
+            message = "Sie haben eine neue Kontaktanfrage von %s <%s> erhalten: \n\n %s \n\n \
+                      Zur Kontaktanfragenübersicht: %s" % (sender, email, text, link)
+            send_mail(
+                'Neue Kontaktanfrage von: %s' % sender,
+                message, settings.ADMINS[0][1],
+                [settings.ADMINS[0][1]], fail_silently=True)
             return HttpResponseRedirect(reverse('homepage:contact_success'))
     else:
         form = ContactForm()
