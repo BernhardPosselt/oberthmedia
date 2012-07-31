@@ -7,7 +7,6 @@
 {% block page_title %}{% trans 'Kontaktieren Sie uns' %}{% endblock %}
 
 {% block text %}
-    <div class="form_errors">
     <form action="{% url 'homepage:contact' %}" method="post">
         {% csrf_token %}
         <div class="form" id="contact_form">
