@@ -24,10 +24,11 @@ DATABASES = {
     }
 }
 
+# Use these settings in production
 if PRODUCTION:
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.mysql.',
+            'ENGINE': 'django.db.backends.mysql',
             'NAME': 'oberthmedia',
             'USER': '',
             'PASSWORD': '',
@@ -132,6 +133,11 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
+
+# Uncomment the following to lines when you use HTTPS to tell django to only
+# send cookies over SSL
+#SESSION_COOKIE_SECURE = True
+#CSRF_COOKIE_SECURE = True
 
 # uncomment this if you want to use the predefined userprofile in homepage
 #AUTH_PROFILE_MODULE = 'homepage.UserProfile'

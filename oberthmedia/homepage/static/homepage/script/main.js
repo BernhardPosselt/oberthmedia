@@ -50,6 +50,7 @@ $(document).ready(function(){
     $(".reference").hover(
         function(){
             var self = this;
+            $(this).data("visible", "true");
             if(!$(this).children('.reference_image').is(':animated') && 
                !$(this).children('.reference_details').is(':animated')){
                 $(this).children('.reference_image').slideUp();
@@ -58,6 +59,7 @@ $(document).ready(function(){
         }, 
         function(){
             var self = this;
+            $(this).data("visible", "false");
             if(!$(this).children('.reference_image').is(':animated') && 
                !$(this).children('.reference_details').is(':animated')){
                 $(this).children('.reference_image').slideDown();

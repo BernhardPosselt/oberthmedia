@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 #-*- coding:utf-8 -*-
 
-# Django imports
 from django.conf.urls.defaults import *
 from django.views.generic import TemplateView
 
