@@ -253,6 +253,10 @@ nav {
             font-weight: normal;
         }
 
+    #content a {
+        color: #263747;
+    }
+
     #content p {
         margin: 0 25px 15px 25px;
         line-height: 1.5;
@@ -281,11 +285,7 @@ nav {
 
         #content table.sitenotice td {
             padding-left: 10px;
-        }
-
-            #content table.sitenotice td a {
-                color: #263747;
-            }        
+        }     
 
     #content .foss {
         box-sizing: border-box;
