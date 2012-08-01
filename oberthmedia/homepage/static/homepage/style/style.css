@@ -39,6 +39,7 @@ body, html {
 #site {
     position: relative;
     font-family: altehaas;
+    background-color: #51829d;
     background-image: url("img/skyline-rostock.png"), url('img/bg.png'), linear-gradient(bottom, rgb(173,95,61) 0%, rgb(220,179,131) 16%, rgb(214,214,186) 40%, rgb(95,147,169) 80%, rgb(55,100,135) 100%);
     background-image: url("img/skyline-rostock.png"), url('img/bg.png'), -o-linear-gradient(bottom, rgb(173,95,61) 0%, rgb(220,179,131) 16%, rgb(214,214,186) 40%, rgb(95,147,169) 80%, rgb(55,100,135) 100%);
     background-image: url("img/skyline-rostock.png"), url('img/bg.png'), -moz-linear-gradient(bottom, rgb(173,95,61) 0%, rgb(220,179,131) 16%, rgb(214,214,186) 40%, rgb(95,147,169) 80%, rgb(55,100,135) 100%);
@@ -114,6 +115,7 @@ nav {
     }
 
     nav ul {
+        background-color: #1b2732;
         background-image: linear-gradient(top, rgb(33,47,61) 0%, rgb(20,29,38) 100%);
         background-image: -o-linear-gradient(top, rgb(33,47,61) 0%, rgb(20,29,38) 100%);
         background-image: -moz-linear-gradient(top, rgb(33,47,61) 0%, rgb(20,29,38) 100%);
@@ -142,6 +144,7 @@ nav {
             }
 
         nav ul li:hover {
+            background-color: #233341;
             background-image: linear-gradient(bottom, rgb(30,43,56) 0%, rgb(38,55,71) 100%);
             background-image: -o-linear-gradient(bottom, rgb(30,43,56) 0%, rgb(38,55,71) 100%);
             background-image: -moz-linear-gradient(bottom, rgb(30,43,56) 0%, rgb(38,55,71) 100%);
@@ -176,6 +179,7 @@ nav {
     }
 
     #news #twitter {
+        background-color: #90161c;
         background-image: linear-gradient(top, rgb(168,18,23) 0%, rgb(127,23,28) 100%);
         background-image: -o-linear-gradient(top, rgb(168,18,23) 0%, rgb(127,23,28) 100%);
         background-image: -moz-linear-gradient(top, rgb(168,18,23) 0%, rgb(127,23,28) 100%);
@@ -250,6 +254,7 @@ nav {
             font-size: 16pt;
             line-height: 46px;
             display: inline-block;
+            background-color: #233341;
             background-image: linear-gradient(top, rgb(33,47,61) 0%, rgb(20,29,38) 100%);
             background-image: -o-linear-gradient(top, rgb(33,47,61) 0%, rgb(20,29,38) 100%);
             background-image: -moz-linear-gradient(top, rgb(33,47,61) 0%, rgb(20,29,38) 100%);
