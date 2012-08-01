@@ -153,6 +153,7 @@ nav {
         }
 
         nav ul li.active {
+            background-color: #233341;
             background-image: linear-gradient(bottom, rgb(30,43,56) 0%, rgb(38,55,71) 100%);
             background-image: -o-linear-gradient(bottom, rgb(30,43,56) 0%, rgb(38,55,71) 100%);
             background-image: -moz-linear-gradient(bottom, rgb(30,43,56) 0%, rgb(38,55,71) 100%);
