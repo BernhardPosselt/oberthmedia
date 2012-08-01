@@ -112,7 +112,7 @@ nav {
         background-image: -ms-linear-gradient(top, rgb(33,47,61) 0%, rgb(20,29,38) 100%);
         border: 1px solid #333;
         height: 46px;
-        width: 448px;
+        width: 463px;
         margin: 0;
         padding: 0;
         float: left;
@@ -158,7 +158,7 @@ nav {
 #news {
     float: left;
     margin-left: 5px;
-    width: 348px;
+    width: 334px;
 }
 
     #news h1 {
