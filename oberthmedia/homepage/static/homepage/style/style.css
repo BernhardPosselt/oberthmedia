@@ -2,17 +2,6 @@
  * Fonts
  */
 @font-face {
-    font-family: dejavusans;
-    src: url('font/DejaVuSansCondensed.ttf');
-}
-
-@font-face {
-    font-family: dejavusans;
-    font-weight: bold;
-    src: url('font/DejaVuSans-Bold.ttf');
-}
-
-@font-face {
     font-family: altehaas;
     src: url('font/AlteHaasGroteskRegular.woff');
 }
