@@ -34,7 +34,7 @@ und Flyergestaltung{% endblocktrans %}
             </header>
             
             <nav>
-                <h1>{% blocktrans %}<b>WERBEAGENTUR</b> AUS <b>ROSTOCK</b>.{% endblocktrans %}</h1>
+                <h1>{% blocktrans %}<b>WERBEAGENTUR</b> AUS <b>ROSTOCK</b><span id="day_night_toggle">.</span>{% endblocktrans %}</h1>
                 <ul>
                     <li {% if active_tab == "index" %}class="active"{% endif %}>
                         <a href="{% url 'homepage:index' %}">{% trans 'Referenzen' %}</a>

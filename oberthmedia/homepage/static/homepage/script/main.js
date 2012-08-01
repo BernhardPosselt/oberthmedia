@@ -40,7 +40,7 @@ $(document).ready(function(){
     }); 
 
     // TODO: Delete in production
-    $("#twitter").click(function(){
+    $("#day_night_toggle").click(function(){
         toggle_night();
     });
 
