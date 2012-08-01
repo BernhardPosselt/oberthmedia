@@ -462,6 +462,15 @@ nav {
                 color: #263747;
             }
 
+        #content .sub_page {
+            margin-top: 50px !important;
+        }
+
+        #content img.left {
+            float: left; 
+            padding: 10px;
+        }
+
         #content #about {
             position: relative;
             z-index: 1;
@@ -470,7 +479,6 @@ nav {
             background-image: url("img/about.png");
             background-repeat: no-repeat;
             background-size: 100%;
-            margin-bottom: 50px;
         }
 
             #content #about .about_header {
@@ -490,6 +498,10 @@ nav {
                 #content #about .about_header p {
                     
                 }
+
+            #content .award {
+                padding-top: 75px;
+            }
 
         #content .error404 {
             color: #263747;
@@ -520,6 +532,8 @@ nav {
     #content .ref_text {
         margin-top: 10px;
     }
+
+
 
 /**
  * Footer

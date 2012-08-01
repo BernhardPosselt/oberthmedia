@@ -19,7 +19,7 @@
     </div>
 </div>
 
-<div class="text">
+<div class="text sub_page">
     <div class="title"><h1>{% trans 'Leistungen' %}</h1></div>
     <p>{% trans 'Wir bieten unter anderem folgende Leistungen an' %}:</p>
     <ul>
@@ -34,9 +34,12 @@
 </div>
 
 
-<div class="text" style="margin-top: 50px;">
+<div class="text sub_page">
     <div class="title"><h1>{% trans 'Preise' %}</h1></div>
     <h2>{% blocktrans %}57. Europäischer Wettbewerb 2010 Europäisches Jahr zur Bekämpfung von Armut und sozialer Ausgrenzung{% endblocktrans %}</h2>
-    <p>{% blocktrans %}Unser Designer Karsten Janke wurde mit dem <a href="http://oberth-media.de/media/images/Urkunde.jpg">Preis</a> des „57. Europäischer Wettbewerb 2010“ vom Bundestagspräsidenten ausgezeichnet. {% endblocktrans %}</p>
+    
+    <p><img class="left" src="{{ STATIC_URL }}homepage/img/pages/medal.png" alt="{% trans 'Medaille' %}"/></p>
+    <p class="award">{% blocktrans %}Unser Designer Karsten Janke wurde mit dem <a href="http://oberth-media.de/media/images/Urkunde.jpg">Preis</a> des „57. Europäischer Wettbewerb 2010“ vom Bundestagspräsidenten ausgezeichnet. {% endblocktrans %}</p>
+    <p style="clear:both;"></p>
 {% endblock %}
 
