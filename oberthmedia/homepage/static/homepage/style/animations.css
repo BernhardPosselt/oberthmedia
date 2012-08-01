@@ -22,23 +22,23 @@
 
 @-keyframes cloud-movement {  
     from, to { background-position: 0 15px, 700px 100px; }  
-    50% { background-position: 0 28px, 703px 94px; }  
+    50% { background-position: 0 20px, 703px 94px; }  
 }
 @-webkit-keyframes cloud-movement {  
     from, to { background-position: 0 15px, 700px 100px; }  
-    50% { background-position: 0 28px, 703px 94px; }  
+    50% { background-position: 0 20px, 703px 94px; }  
 }  
 @-moz-keyframes cloud-movement {  
     from, to { background-position: 0 15px, 700px 100px; }  
-    50% { background-position: 0 28px, 703px 94px; }  
+    50% { background-position: 0 20px, 703px 94px; }  
 }  
 @-o-keyframes cloud-movement {  
     from, to { background-position: 0 15px, 700px 100px; }  
-    50% { background-position: 0 28px, 703px 94px; }  
+    50% { background-position: 0 20px, 703px 94px; }  
 }  
 @-ms-keyframes cloud-movement {  
     from, to { background-position: 0 15px, 700px 100px; }  
-    50% { background-position: 0 28px, 703px 94px; }  
+    50% { background-position: 0 20px, 703px 94px; }  
 }  
 
 
@@ -62,21 +62,21 @@
 
 @-keyframes night-cloud-movement {  
     from, to { background-position: 0 15px, 700px 100px, 950px 30px; }  
-    50% { background-position: 0 28px, 703px 94px, 950px 30px; }  
+    50% { background-position: 0 20px, 703px 94px, 950px 30px; }  
 }
 @-webkit-keyframes night-cloud-movement {  
     from, to { background-position: 0 15px, 700px 100px, 950px 30px; }  
-    50% { background-position: 0 28px, 703px 94px, 950px 30px; }  
+    50% { background-position: 0 20px, 703px 94px, 950px 30px; }  
 }  
 @-moz-keyframes night-cloud-movement {  
     from, to { background-position: 0 15px, 700px 100px, 950px 30px; }  
-    50% { background-position: 0 28px, 703px 94px, 950px 30px; }  
+    50% { background-position: 0 20px, 703px 94px, 950px 30px; }  
 }  
 @-o-keyframes night-cloud-movement {  
     from, to { background-position: 0 15px, 700px 100px, 950px 30px; }  
-    50% { background-position: 0 28px, 703px 94px, 950px 30px; }  
+    50% { background-position: 0 20px, 703px 94px, 950px 30px; }  
 }  
 @-ms-keyframes night-cloud-movement {  
     from, to { background-position: 0 15px, 700px 100px, 950px 30px; }  
-    50% { background-position: 0 28px, 703px 94px, 950px 30px; }  
+    50% { background-position: 0 20px, 703px 94px, 950px 30px; }  
 }  
