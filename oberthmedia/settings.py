@@ -5,6 +5,7 @@ import os.path
 # Django settings for oberthmedia project.
 PRODUCTION = False
 
+PRODUCTION = False
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 

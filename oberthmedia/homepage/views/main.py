@@ -17,7 +17,7 @@ from oberthmedia.homepage.models import Reference
 
 def index(request):
     refs = Reference.objects.filter(active=True)
-    leftToGenerate = range(3 - (len(refs) % 3))
+    leftToGenerate = range((3 - (len(refs) % 3)) % 3)
     ctx = {
         "active_tab": "index",
         "references": refs,
