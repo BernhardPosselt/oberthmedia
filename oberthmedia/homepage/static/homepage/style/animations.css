@@ -89,29 +89,29 @@
  * Hover on references
  */
 #content .references .reference:hover .reference_image {
-    -moz-transition: top 750ms ease 0s;
-    -webkit-transition: top 750ms ease 0s;
-    -o-transition: top 750ms ease 0s;
-    transition: top 750ms ease 0s;
+    -moz-transition: top 850ms ease 0s;
+    -webkit-transition: top 850ms ease 0s;
+    -o-transition: top 850ms ease 0s;
+    transition: top 850ms ease 0s;
 }
 
 #content .references .reference .reference_image {
-    -moz-transition: top 750ms ease 0s;
-    -webkit-transition: top 750ms ease 0s;
-    -o-transition: top 750ms ease 0s;
-    transition: top 750ms ease 0s;
+    -moz-transition: top 850ms ease 0s;
+    -webkit-transition: top 850ms ease 0s;
+    -o-transition: top 850ms ease 0s;
+    transition: top 850ms ease 0s;
 }
 
 #content .references .reference:hover .reference_details {
-    -moz-transition: top 750ms ease 0s;
-    -webkit-transition: top 750ms ease 0s;
-    -o-transition: top 750ms ease 0s;
-    transition: top 750ms ease 0s;
+    -moz-transition: top 850ms ease 0s;
+    -webkit-transition: top 850ms ease 0s;
+    -o-transition: top 850ms ease 0s;
+    transition: top 850ms ease 0s;
 }
 
 #content .references .reference .reference_details {
-    -moz-transition: top 750ms ease 0s;
-    -webkit-transition: top 750ms ease 0s;
-    -o-transition: top 750ms ease 0s;
-    transition: top 750ms ease 0s;
+    -moz-transition: top 850ms ease 0s;
+    -webkit-transition: top 850ms ease 0s;
+    -o-transition: top 850ms ease 0s;
+    transition: top 850ms ease 0s;
 }
