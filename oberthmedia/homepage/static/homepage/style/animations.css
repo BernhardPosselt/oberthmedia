@@ -2,6 +2,10 @@
  * Animations
  */
 
+/**
+ * Clouds
+ */
+
 #main {
     animation-duration: 3s;  
     animation-name: cloud-movement; 
@@ -80,3 +84,34 @@
     from, to { background-position: 0 15px, 700px 100px, 950px 30px; }  
     50% { background-position: 0 20px, 703px 94px, 950px 30px; }  
 }  
+
+/**
+ * Hover on references
+ */
+#content .references .reference:hover .reference_image {
+    -moz-transition: top 500ms ease 0s;
+    -webkit-transition: top 500ms ease 0s;
+    -o-transition: top 500ms ease 0s;
+    transition: top 500ms ease 0s;
+}
+
+#content .references .reference .reference_image {
+    -moz-transition: top 500ms ease 0s;
+    -webkit-transition: top 500ms ease 0s;
+    -o-transition: top 500ms ease 0s;
+    transition: top 500ms ease 0s;
+}
+
+#content .references .reference:hover .reference_details {
+    -moz-transition: top 500ms ease 0s;
+    -webkit-transition: top 500ms ease 0s;
+    -o-transition: top 500ms ease 0s;
+    transition: top 500ms ease 0s;
+}
+
+#content .references .reference .reference_details {
+    -moz-transition: top 500ms ease 0s;
+    -webkit-transition: top 500ms ease 0s;
+    -o-transition: top 500ms ease 0s;
+    transition: top 500ms ease 0s;
+}

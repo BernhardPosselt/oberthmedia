@@ -44,29 +44,6 @@ $(document).ready(function(){
         toggle_night();
     });
 
-    /**
-     * References effects
-     */
-    $(".reference").hover(
-        function(){
-            var self = this;
-            $(this).data("visible", "true");
-            //if(!$(this).children('.reference_image').is(':animated') && 
-            //!$(this).children('.reference_details').is(':animated')){
-                $(this).children('.reference_image').slideUp();
-                $(self).children('.reference_details').slideDown();
-            //}
-        }, 
-        function(){
-            var self = this;
-            $(this).data("visible", "false");
-            //if(!$(this).children('.reference_image').is(':animated') && 
-            //!$(this).children('.reference_details').is(':animated')){
-                $(this).children('.reference_image').slideDown();
-                $(self).children('.reference_details').slideUp();
-            //}
-        }
-    );
 
     /**
      * Slide down telephone on input

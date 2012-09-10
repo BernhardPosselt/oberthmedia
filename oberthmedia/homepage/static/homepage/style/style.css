@@ -316,28 +316,39 @@ nav {
             margin-bottom: 11px;
             float: left;
             position: relative;
+            overflow: hidden;
         }
 
             #content .references .reference .reference_image {
-                position: relative;
+                position: absolute;
                 z-index: 1; 
                 width: 100%;
                 height: 100%;
                 background-repeat: no-repeat;
                 background-size: 100%;   
                 background-color: #97b7c1;
+                top: 0;
             }
 
+
+                #content .references .reference:hover .reference_image {
+                    top: -360px;
+                }
+
             #content .references .reference .reference_details {
-                display: none;
-                position: relative;
+                position: absolute;
                 margin-top: 120px;
                 box-sizing: border-box;
                 -moz-box-sizing: border-box;
                 padding: 20px;
                 width: 100%;
-                z-index: 1;
+                z-index: 2;
+                top: 360px;
             }
+
+                #content .references .reference:hover .reference_details {
+                    top: 0;
+                }
 
             #content .references .reference h2.reference_title {
                 word-wrap: break-word;
