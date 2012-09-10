@@ -41,6 +41,8 @@ body, html {
     background-repeat: no-repeat, repeat;
     background-position: bottom;
     background-size: 100%, auto;
+    min-width: 1024px;
+    overflow: auto;
 }
 
 #site.night {
@@ -290,6 +292,7 @@ nav {
     #content .foss {
         box-sizing: border-box;
         -moz-box-sizing: border-box;
+        background-color: rgba(255, 255, 255, 0.25);
         padding: 20px;
         width: 860px;
         margin: auto;
