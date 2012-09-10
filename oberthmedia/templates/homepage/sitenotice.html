@@ -1,48 +1,114 @@
-{% extends 'homepage/base.html' %}
+{% extends 'homepage/text.html' %}
 {% load i18n %}
 {% load url from future %}
 
-{% block title %}{% trans 'Oberth-Media - Über uns' %}{% endblock %}
+{% block title %}{% trans 'Oberth-Media - Impressum' %}{% endblock %}
 
-{% block content %}
-<div id="about">
-    <div class="title"><h1>{% trans 'Über uns' %}</h1></div>
-    <div class="about_header">
-        <h2>{% trans 'Oberth Media ist' %}:</h2>
-        <p>{% blocktrans %}Eine junge, innovative Werbeagentur aus Rostock. <p>Oberth Media besteht aus: </p>
-        <ul>
-            <li>Julian Oberth (CEO)</li>
-            <li>Karsten Janke (Designer)</li>
-        </ul>
-        {% endblocktrans %}</p>
-        <p>{% blocktrans %}Wir stehen Ihnen seit 2010 mit frischen Ideen zur Seite.{% endblocktrans %}</p>
-    </div>
-</div>
+{% block page_title %}{% trans 'Impressum' %}{% endblock %}
 
-<div class="text sub_page">
-    <div class="title"><h1>{% trans 'Leistungen' %}</h1></div>
-    <p>{% trans 'Wir bieten unter anderem folgende Leistungen an' %}:</p>
-    <ul>
-        <li>{% trans 'Corporate Design & Identity' %}</li>
-        <li>{% trans 'Satz und Layout' %}</li>
-        <li>{% trans 'Gestaltung von Druckereierzeugnissen und deren Druck (bsw. Visitenkarten, Briefpapier, Stempel und Co.)' %}</li>
-        <li>{% trans 'Illustrationen & Fotografie' %}</li>
-        <li>{% trans 'Webseitengestaltung & Programmierung' %}</li>
-        <li>{% trans 'Werbegeschenke & Werbetexte (auch in Englisch)' %}</li>
-        <li>{% trans 'Sonderwünsche wie bsw. sehr edle Visitenkarten' %}</li> 
-    </ul>
-</div>
+{% block text %}
+
+<p class="sitenotice">{% trans 'Oberth Media haftet nicht für weiterführende Links.' %}</p>
+<table class="sitenotice">
+    <tr>
+        <th>{% trans 'Firma' %}:</th>
+        <td>{% trans 'Julian Oberth und Karsten Janke Media GbR' %}</td>
+    </tr>
+    <tr>
+        <th>{% trans 'Steuernummer' %}:</th>
+        <td>079/156/15702</td>
+    </tr>
+    <tr>
+        <th>{% trans 'USt-IdNr.' %}:</th>
+        <td>DE270658777</td>
+    </tr>
+</table>
+
+<p><br /></p>
+
+<div class="title"><h1>{% trans 'Wir sind' %}:</h1></div>
+<table class="sitenotice">
+    <tr>
+        <th>{% trans 'Vorname' %}:</th>
+        <td>Julian Amadeus Herrmann</td>
+    </tr>
+    <tr>
+        <th>{% trans 'Nachname' %};</th>
+        <td>Oberth</td>
+    </tr>
+    <tr>
+        <th>{% trans 'Anschrift' %}:</th>
+        <td>Max-Maddalena-Straße 20, 18069 Rostock</td>
+    </tr>
+    <tr>
+        <th>{% trans 'E-Mail' %}:</th>
+        <td>julian.oberth@oberth-media.de</td>
+    </tr>
+    <tr>
+        <th>{% trans 'Mobil' %}:</th>
+        <td>0152/ 535 75 535</td>
+    </tr>
+</table>
+
+<table class="sitenotice">
+    <tr>
+        <th>{% trans 'Vorname' %}:</th>
+        <td>Karsten</td>
+    </tr>
+    <tr>
+        <th>{% trans 'Nachname' %}:</th>
+        <td>Janke</td>
+    </tr>
+    <tr>
+        <th>{% trans 'Anschrift' %}:</th>
+        <td>Elisabethstraße 8, 18057 Rostock</td>
+    </tr>
+    <tr>
+        <th>{% trans 'E-Mail' %}:</th>
+        <td>karsten.janke@oberth-media.de</td>
+    </tr>
+    <tr>
+        <th>{% trans 'Mobil' %}:</th>
+        <td>0163/ 977 499 0</td>
+    </tr>
+</table>
 
 
-<div class="text sub_page">
-    <div class="title"><h1>{% trans 'Preise' %}</h1></div>
-    <h2>{% blocktrans %}57. Europäischer Wettbewerb 2010 Europäisches Jahr zur Bekämpfung von Armut und sozialer Ausgrenzung{% endblocktrans %}</h2>
-    
-    <p><a href="{{ STATIC_URL }}homepage/img/pages/57wettbewerb.jpg"><img width="200" class="left" src="{{ STATIC_URL }}homepage/img/pages/57wettbewerb.jpg" alt="{% trans 'Medaille' %}"/></a></p>
-    <p>{% blocktrans %}Unser Designer Karsten Janke wurde mit dem Preis des <a href="http://www.europaeischer-wettbewerb.de/">„57. Europäischer Wettbewerb 2010“</a> vom Bundestagspräsidenten ausgezeichnet. {% endblocktrans %}</p>
-    <p>Aufgabe war es, auf das Thema Armut und Soziale Ausgrenzung aufmerksam zu machen. Dazu wurden diverse Poster erstellt, die dann zur Auswahl geschickt wurden.</p>
-    <p>Der Titel des 57. Europäischer Wettbewerb 2010: Mit neuem Mut. 2010 Europäisches Jahr zur Bekämpfung von Armut und sozialer Ausgrenzung</p>
-    <p style="clear:both;"></p>
+<p><br /></p>
+
+<div class="title"><h1>{% trans 'Wir danken' %}</h1></div>
+<table class="sitenotice">
+    <tr>
+        <th>{% trans 'Programmierer' %}:</th>
+        <td><a href="http://bernhard-posselt.com/">Bernhard Posselt</a></td>
+    </tr>
+    <tr>
+        <th>{% trans 'Server-Hosting' %}:</th>
+        <td>Angelo Gründler</td>
+    </tr>
+    <tr>
+        <th>{% trans 'Fonts' %}:</th>
+        <td><a href="http://www.yannlecoroller.com">Yann Le Coroller</a></td>
+    </tr>
+</table>
+
+<p><br /></p>
+
+<div class="title"><h1>{% trans 'Ein weiterer Dank geht an folgende Open Source Projekte:' %}</h1></div>
+<div class="foss">
+    <table>
+        <tr>
+            <td><a href="http://jquery.com/"><img src="{{ STATIC_URL }}homepage/img/pages/jquery.png" alt="jQuery" /></a></td>
+            <td><a href="http://www.djangoproject.com/"><img src="{{ STATIC_URL }}homepage/img/pages/django.gif" alt="Django" /></a></td>
+            <td><a href="http://python.org/"><img src="{{ STATIC_URL }}homepage/img/pages/python.png" alt="Python" /></a></td>
+            <td><a href="http://dev.mysql.com/"><img src="{{ STATIC_URL }}homepage/img/pages/mysql.png" alt="Mysql" /></a></td>
+        </tr>
+        <tr>
+            <td><a href="http://debian.org/"><img src="{{ STATIC_URL }}homepage/img/pages/debian.png" alt="Debian GNU/Linux"/></a></td>
+            <td><a href="http://gimp.org/"><img src="{{ STATIC_URL }}homepage/img/pages/gimp.png" alt="Gimp"/></a></td>
+            <td><a href="http://inkscape.org/"><img src="{{ STATIC_URL }}homepage/img/pages/inkscape.png" alt="Inkscape"/></a></td>
+            <td><a href="http://httpd.apache.org/"><img src="{{ STATIC_URL }}homepage/img/pages/apache.gif" alt="Apache" /></a></td>
+        </tr>
+    </table>
 </div>
 {% endblock %}
-
