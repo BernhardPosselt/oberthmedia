@@ -184,6 +184,6 @@ LOGGING = {
 
 # loads the production values from the settings file
 try:
-    from defaultproject.local_settings import *
+    from oberthmedia.local_settings import *
 except ImportError:
     pass
