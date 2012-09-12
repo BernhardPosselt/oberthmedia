@@ -41,4 +41,5 @@ intermediate
 publish
 .idea
 __pycache__
-production.cfg
+
+local_settings.py

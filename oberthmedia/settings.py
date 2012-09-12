@@ -2,10 +2,10 @@
 #-*- coding:utf-8 -*-
 import os.path
 
-# Django settings for oberthmedia project.
-PRODUCTION = False
 
-PRODUCTION = False
+# Shortcut for the installation directory
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -15,28 +15,12 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-# Shortcut for the installation directory
-PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(PROJECT_PATH, 'oberthmedia.db'),
+        'NAME': os.path.join(PROJECT_ROOT, 'oberthmedia.db'),
     }
 }
-
-# Use these settings in production
-if PRODUCTION:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'oberthmedia',
-            'USER': '',
-            'PASSWORD': '',
-            'HOST': '',  # Set to empty string for localhost. Not used with sqlite3.
-            'PORT': '',  # Set to empty string for default. Not used with sqlite3.
-        }
-    }
 
 
 # Local time zone for this installation. Choices can be found here:
@@ -79,17 +63,17 @@ USE_TZ = True
 PROJECT_URL = ''
 
 # the url which redirects to the login view
-LOGIN_URL = PROJECT_URL + '/login'
+LOGIN_URL = '%s/login' % PROJECT_URL
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = os.path.join(PROJECT_PATH, 'static/')
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static/')
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
-STATIC_URL = PROJECT_URL + '/static/'
+STATIC_URL = '%s/static/' % PROJECT_URL
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
@@ -98,7 +82,7 @@ MEDIA_ROOT = os.path.join(STATIC_ROOT, 'upload/')
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
-MEDIA_URL = PROJECT_URL + '/upload/'
+MEDIA_URL = '%s/upload/' % PROJECT_URL
 
 # Additional locations of static files
 # to compile all static files in production run python manage.py collectstatic
@@ -149,7 +133,7 @@ ROOT_URLCONF = 'oberthmedia.urls'
 WSGI_APPLICATION = 'oberthmedia.wsgi.application'
 
 TEMPLATE_DIRS = (
-    os.path.join(PROJECT_PATH, 'templates/'),
+    os.path.join(PROJECT_ROOT, 'templates/'),
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -197,3 +181,9 @@ LOGGING = {
         },
     }
 }
+
+# loads the production values from the settings file
+try:
+    from defaultproject.local_settings import *
+except ImportError:
+    pass
