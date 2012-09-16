@@ -66,9 +66,10 @@ $(document).ready(function(){
 
     $(".reference").each(function(){
         if($(this).children().length !== 0){
+            var self = this;
             $(this).addClass('clickable');
             $(this).click(function(){
-                var $link = $(this).find('.reference_description a');
+                var $link = $(self).find('.reference_description a');
                 window.location.href = $link.attr('href');
             });
         }
