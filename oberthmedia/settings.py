@@ -10,7 +10,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    ('Karsten Janke', 'admin@oberth-media'),
+    ('Karsten Janke', 'admin@oberth-media.de'),
 )
 
 MANAGERS = ADMINS
