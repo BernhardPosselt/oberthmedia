@@ -8,7 +8,7 @@
 <div class="title"><h1>{% trans 'Unsere Referenzen' %}</h1></div>
 <div class="references">
     {% for ref in references %}
-        <div class="reference" {% if forloop.counter|divisibleby:'3' %}style="margin-right: 0;"{% endif %}>
+        <div data-id="{{ ref.id }}" class="reference" {% if forloop.counter|divisibleby:'3' %}style="margin-right: 0;"{% endif %}>
             <div class="reference_image" style="background-image: url('{{ STATIC_URL }}upload/{{ ref.cover }}');"></div>
             <div class="reference_details">
                 <h2 class="reference_title"><a href="{% url 'homepage:reference' ref.id %}">{{ ref.title|upper }}</a></h2>

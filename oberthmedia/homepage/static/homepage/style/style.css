@@ -321,6 +321,10 @@ nav {
             overflow: hidden;
         }
 
+        #content .references .reference.clickable {
+            cursor: pointer;
+        }
+
             #content .references .reference .reference_image {
                 position: absolute;
                 z-index: 1; 

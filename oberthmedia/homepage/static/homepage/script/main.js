@@ -62,7 +62,18 @@ $(document).ready(function(){
         } else {
             $(this).parent().addClass("requiredbg");
         }
-    })
+    });
+
+    $(".reference").each(function(){
+        if($(this).children().length !== 0){
+            $(this).addClass('clickable');
+            $(this).click(function(){
+                var $link = $(this).find('.reference_description a');
+                window.location.href = $link.attr('href');
+            });
+        }
+    });
+
 
 });
 
