@@ -84,4 +84,17 @@ function toggle_night(){
     $('#content h1').toggleClass('night');
     $('#main').toggleClass('night');
     $('footer').toggleClass('night');
+    if($('#site').hasClass('night')){
+        $('.foss img').each(function(){
+            var src = this.src;
+            src = src.replace('day', 'night');
+            this.src = src;
+        });
+    } else {
+        $('.foss img').each(function(){
+            var src = this.src;
+            src = src.replace('night', 'day');
+            this.src = src;
+        });
+    }
 }
