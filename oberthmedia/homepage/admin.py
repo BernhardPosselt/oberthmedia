@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #-*- coding:utf-8 -*-
 
-from oberthmedia.homepage.models import Contact, Reference
+from oberthmedia.homepage.models import Contact, Reference, News
 from django.contrib import admin
 
 
@@ -21,5 +21,13 @@ class ReferenceAdmin(admin.ModelAdmin):
     date_hierarchy = 'timestamp'
 
 
+class NewsAdmin(admin.ModelAdmin):
+    list_display = ['message', 'timestamp']
+    ordering = ['-timestamp']
+    search_fields = ['message', 'timestamp']
+    list_filter = ['timestamp']
+    date_hierarchy = 'timestamp'
+
+admin.site.register(News, NewsAdmin)
 admin.site.register(Contact, ContactAdmin)
 admin.site.register(Reference, ReferenceAdmin)

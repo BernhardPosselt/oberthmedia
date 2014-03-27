@@ -7,6 +7,19 @@ from django.utils.translation import ugettext_lazy as _
 #class UserProfile(models.Model):
 #    user = models.OneToOneField("auth.User")
 
+class News(models.Model):
+    message = models.CharField(_(u"Nachricht"), help_text=_(u"140 Zeichen \
+        Nachricht für die Startseite"), max_length=140)
+    timestamp = models.DateTimeField(_(u"Erstelldatum"), auto_now_add=True)
+
+    def __unicode__(self):
+        return self.message
+
+    class Meta:
+        verbose_name = _(u"News")
+        verbose_name_plural = _(u"News")
+        ordering = ['-timestamp'] 
+
 
 class Contact(models.Model):
     name = models.CharField(_(u"Name"), max_length=200, help_text=_(u"Wie heißen \

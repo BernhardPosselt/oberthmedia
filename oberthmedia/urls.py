@@ -2,7 +2,7 @@
 #-*- coding:utf-8 -*-
 
 # Django imports
-from django.conf.urls.defaults import patterns, include, url
+from django.conf.urls import patterns, include, url
 from django.conf import settings
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
@@ -12,8 +12,6 @@ admin.autodiscover()
 urlpatterns = patterns('',
 )
 
-if settings.DEBUG:
-    urlpatterns += staticfiles_urlpatterns()
 
 # generate top url for appending to urls
 project_url = ''
