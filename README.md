@@ -1,7 +1,6 @@
 Dependencies
 ============
-Python imaging library
-Mailserver (Postfix)
+* Mailserver (Postfix)
 
 
 Before Deploying
