@@ -15,7 +15,8 @@ ADMINS = (
 )
 
 ALLOWED_HOSTS = [
-    '.oberth-media.de'
+    '.oberth-media.de',
+    '78.47.58.115'
 ]
 
 DATABASES = {
