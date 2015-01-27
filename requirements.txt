@@ -1,3 +1,4 @@
 Django>=1.6.10,<1.7
 Pillow==2.3.1
 pytz==2014.2
+psycopg2==2.5.4
